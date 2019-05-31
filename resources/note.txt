@@ -1,0 +1,14 @@
+"<html app='firefox.exe' title='Inpatient - Reports' /><webctrl parentid='dvReportList'/><webctrl tag='A' aaname=' "+report+"' />"
+"<html app='firefox.exe' htmlwindowname='Report' title='"+report+"' />"
+<html app='firefox.exe' htmlwindowname='Report' title='Coder Information' />
+{"Coder Information","Data Comparison","Case Mix Index (CMI) Analysis","Attending Physician Frequency by DRG","Average Length of Stay by Payer by Month","APC reimbursement visit summary","Brief visit listing"} 
+{"APR DRG Dashboard","Business Rule Summarization (T-SQL Version)"}
+academyuipathYY113
+CMI Reimbursement Summary 
+{"Coder Information","Financial Class Mapping Information"}
+"C:\Users\yyang212\Documents\UiPath\UIPath_demo\resources\"+report.ToString+" Result.png"
+"<html app='firefox.exe' htmlwindowname='Report' title='"+report.ToString+"' />"
+"<html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='spnEachReportSeriesName' tag='SPAN' aaname='"+report+"'idx='2'/>"
+
+<html app='firefox.exe' title='Management Suite - Report Glossary' />
+<webctrl id='spnEachReportSeriesName' tag='SPAN' aaname='"+report+"' css-selector='body&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div&gt;ul&gt;li&gt;div&gt;div&gt;a&gt;span' idx='2' />

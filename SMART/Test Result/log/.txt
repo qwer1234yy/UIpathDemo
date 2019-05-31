@@ -1,0 +1,21 @@
+OOps: Exception occurred in a loop: UiPath.Core.BrowserOperationException: Cannot communicate with the browser, please check the UiPath extension. ---> System.Runtime.InteropServices.COMException: Cannot communicate with the browser, please check the UiPath extension.
+   at UiPath.UiBrowserClass.Open(String bstrURL, UiBrowserFlags flag)
+   at UiPath.Core.Browser.Open(String url, Boolean privateSession, Boolean headlessSession, Boolean defaultSession)
+   --- End of inner exception stack trace ---
+   at UiPath.Executor.WorkflowRunner.EndExecute(IAsyncResult result) in D:\a\1\s\Robot\UiPath.Executor\WorkflowRuntime.cs:line 181
+   at UiPath.Core.Activities.InvokeWorkflowFile.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.System.Activities.IAsyncCodeActivity.FinishExecution(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.CompleteAsyncCodeActivityData.CompleteAsyncCodeActivityWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+OOps: Exceptional screenshot taken
+OK: Finished one loop for this report: 
+OOps: Exception occurred in a loop: UiPath.Core.BrowserOperationException: Cannot communicate with the browser, please check the UiPath extension. ---> System.Runtime.InteropServices.COMException: Cannot communicate with the browser, please check the UiPath extension.
+   at UiPath.UiBrowserClass.Open(String bstrURL, UiBrowserFlags flag)
+   at UiPath.Core.Browser.Open(String url, Boolean privateSession, Boolean headlessSession, Boolean defaultSession)
+   --- End of inner exception stack trace ---
+   at UiPath.Executor.WorkflowRunner.EndExecute(IAsyncResult result) in D:\a\1\s\Robot\UiPath.Executor\WorkflowRuntime.cs:line 181
+   at UiPath.Core.Activities.InvokeWorkflowFile.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.System.Activities.IAsyncCodeActivity.FinishExecution(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.CompleteAsyncCodeActivityData.CompleteAsyncCodeActivityWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+OOps: Exceptional screenshot taken
+OK: Finished one loop for this report: 
+OK: Finished one loop for this report: 

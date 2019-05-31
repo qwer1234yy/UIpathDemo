@@ -1,0 +1,7 @@
+OK: Start to run for : IP Standard - DRG Listing by Payer
+OK: Click to expand report: IP Standard - DRG Listing by Payer
+OK: Double Click the First Report Name below: IP Standard - DRG Listing by Payer
+OK: Find DIV  dvCustomSearchPopup: IP Standard - DRG Listing by Payer
+OK: Click BUTTON  btnViewReport : IP Standard - DRG Listing by Payer
+OK: Close window and go on for the next report: IP Standard - DRG Listing by Payer
+OK: Finished one loop for this report: IP Standard - DRG Listing by Payer

@@ -1,0 +1,11 @@
+OK: Start to run for : IP Standard - DRG Clinical Profile
+OK: Click to expand report: IP Standard - DRG Clinical Profile
+OK: Double Click the First Report Name below: IP Standard - DRG Clinical Profile
+OK: Find DIV  dvCustomSearchPopup: IP Standard - DRG Clinical Profile
+OK: Click BUTTON  btnViewReport : IP Standard - DRG Clinical Profile
+OK: Click to activate report view window for hotkey: IP Standard - DRG Clinical Profile
+OK: Send hotkey: pgdn for  IP Standard - DRG Clinical Profile
+OK: Report generated: IP Standard - DRG Clinical Profile
+OK: Report generated, screenshot taken:  IP Standard - DRG Clinical Profile
+OK: Close window and go on for the next report: IP Standard - DRG Clinical Profile
+OK: Close window and go on for the next report: IP Standard - DRG Clinical Profile
