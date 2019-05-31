@@ -1,0 +1,16 @@
+OK: Start to run for : IP Standard - Readmissions
+OK: Click to expand report: IP Standard - Readmissions
+OK: Double Click the First Report Name below: IP Standard - Readmissions
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Readmissions
+OK: Click BUTTON  btnViewReport : IP Standard - Readmissions
+OK: Click to activate report view window for hotkey: IP Standard - Readmissions
+OK: Send hotkey: pgdn for  IP Standard - Readmissions
+OK: Report generated: IP Standard - Readmissions
+OK: Report generated, screenshot taken:  IP Standard - Readmissions
+OK: Close window and go on for the next report: IP Standard - Readmissions
+OK: Start to run for : IP Standard - Readmissions
+OK: Click to expand report: IP Standard - Readmissions
+OK: Double Click the First Report Name below: IP Standard - Readmissions
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Readmissions
+OK: Click BUTTON  btnViewReport : IP Standard - Readmissions
+OOps: Exceptional screenshot taken for IP Standard - Readmissions

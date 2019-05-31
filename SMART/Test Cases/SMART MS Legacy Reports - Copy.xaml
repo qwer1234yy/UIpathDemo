@@ -88,6 +88,7 @@
       <Variable x:TypeArguments="x:String" Default="C:\Users\yyang212\Documents\UiPath\UIPath_demo\SMART\Test Result\log\" Name="TR_Log_TXT_Base_Path" />
       <Variable x:TypeArguments="x:String" Default="C:\Users\yyang212\Documents\UiPath\UIPath_demo\SMART\Test Result\outcome\Test Result for MS Legacy Report.docx" Name="TR_Outcome_Word_Path" />
       <Variable x:TypeArguments="x:Boolean" Name="IsLogin" />
+      <Variable x:TypeArguments="x:Boolean" Name="ExistReportCustomSearchPopup" />
     </Sequence.Variables>
     <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[Resource_IP_Reports_DT]" Delimitator="Comma" DisplayName="Read CSV" FilePath="[Resource_IP_Reports_CSV_path]" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
     <ui:FilterDataTable DataTable="[Resource_IP_Reports_DT]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[Resource_IP_Reports_DT_Filtered]" SelectColumnsMode="Keep">
@@ -129,18 +130,16 @@
             <TryCatch.Try>
               <Sequence DisplayName="Body" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Info" Message="[&quot;OK: Start one loop for this report: &quot; + report]" />
-                <ui:CommentOut DisplayName="Comment Out">
+                <ui:CommentOut DisplayName="Comment Out" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                   <ui:CommentOut.Body>
-                    <Sequence DisplayName="Ignored Activities">
+                    <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_17">
                       <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke SMART Login workflow" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="SMART Login.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <OutArgument x:TypeArguments="x:Boolean" x:Key="IsLogin">[IsLogin]</OutArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
-                      <sap2010:WorkflowViewState.IdRef>Sequence_17</sap2010:WorkflowViewState.IdRef>
                     </Sequence>
                   </ui:CommentOut.Body>
-                  <sap2010:WorkflowViewState.IdRef>CommentOut_1</sap2010:WorkflowViewState.IdRef>
                 </ui:CommentOut>
                 <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_47" Level="Info" Message="[&quot;IsLogin: &quot; + IsLogin.ToString]" />
                 <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" Activate="True" ClickBeforeTyping="False" DelayMS="2000" DisplayName="Type Into 'INPUT  txtSearch'" EmptyField="True" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="False" SimulateType="False" Text="[report]">
@@ -212,7 +211,7 @@
                     <InArgument x:TypeArguments="x:Int32">[Integer.Parse(system.Text.RegularExpressions.Regex.Match( Search_Result_Enterprise_Reports, "\d+").Value)]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <TryCatch DisplayName="Try Catch" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                <TryCatch DisplayName="If IP_Reports_Number &gt;= 1" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                   <TryCatch.Try>
                     <If Condition="[Search_Result_IP_Reports_Number &gt;= 1]" DisplayName="If IP_Reports_Number &gt;= 1" sap2010:WorkflowViewState.IdRef="If_1">
                       <If.Then>
@@ -257,109 +256,149 @@
                           </ui:Click>
                           <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info" Message="[&quot;OK: Double Click the First Report Name below: &quot; + TR_Report_Name]" />
                           <ui:AppendLine DisplayName="Append Line" FileName="[TR_Log_TXT_Base_Path + TR_Report_Name + &quot;.txt&quot;]" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[&quot;OK: Double Click the First Report Name below: &quot; + TR_Report_Name]" />
-                          <ui:WaitUiElementAppear FoundElement="{x:Null}" DisplayName="Find 'DIV  dvCustomSearchPopup'" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_6" WaitActive="False" WaitVisible="False">
-                            <ui:WaitUiElementAppear.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="d7ee7142f50524793bb990b90be4ad34" Selector="&lt;html app='firefox.exe' title='Management Suite - Report Glossary' /&gt;&lt;webctrl id='dvCustomSearchPopup' tag='DIV' /&gt;" WaitForReady="INTERACTIVE" />
-                            </ui:WaitUiElementAppear.Target>
-                          </ui:WaitUiElementAppear>
-                          <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Info" Message="[&quot;OK: Find DIV  dvCustomSearchPopup: &quot; + TR_Report_Name]" />
-                          <ui:AppendLine DisplayName="Append Line" FileName="[TR_Log_TXT_Base_Path + TR_Report_Name + &quot;.txt&quot;]" sap2010:WorkflowViewState.IdRef="AppendLine_4" Text="[&quot;OK: Find DIV  dvCustomSearchPopup: &quot; + TR_Report_Name]" />
-                          <ui:WaitUiElementAppear FoundElement="{x:Null}" DisplayName="Find 'BUTTON  btnViewReport'" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_9" WaitActive="False" WaitVisible="False">
-                            <ui:WaitUiElementAppear.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="ad7ad78265b286ba7038e307cd2000cb" Selector="&lt;html app='firefox.exe' title='Management Suite - Report Glossary' /&gt;&lt;webctrl id='btnViewReport' tag='BUTTON' /&gt;" WaitForReady="INTERACTIVE" />
-                            </ui:WaitUiElementAppear.Target>
-                          </ui:WaitUiElementAppear>
-                          <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  btnViewReport'" sap2010:WorkflowViewState.IdRef="Click_19" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
-                            <ui:Click.CursorPosition>
-                              <ui:CursorPosition Position="Center">
-                                <ui:CursorPosition.OffsetX>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:CursorPosition.OffsetX>
-                                <ui:CursorPosition.OffsetY>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:CursorPosition.OffsetY>
-                              </ui:CursorPosition>
-                            </ui:Click.CursorPosition>
-                            <ui:Click.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="3ee53bf0b47e25a59b9b7306291679b8" Selector="&lt;html app='firefox.exe' title='Management Suite - Report Glossary' /&gt;&lt;webctrl id='btnViewReport' tag='BUTTON' /&gt;" WaitForReady="INTERACTIVE" />
-                            </ui:Click.Target>
-                          </ui:Click>
-                          <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;OK: Click BUTTON  btnViewReport : &quot; + TR_Report_Name]" />
-                          <ui:AppendLine DisplayName="Append Line" FileName="[TR_Log_TXT_Base_Path + TR_Report_Name + &quot;.txt&quot;]" sap2010:WorkflowViewState.IdRef="AppendLine_5" Text="[&quot;OK: Click BUTTON  btnViewReport : &quot; + TR_Report_Name]" />
-                          <ui:WaitUiElementAppear FoundElement="{x:Null}" DisplayName="Find Element 'firefox.exe Data'" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_25" WaitActive="False" WaitVisible="False">
-                            <ui:WaitUiElementAppear.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="4a1780c7e1ce311d31b2fdd1ccfa4915" Selector="&lt;html app='firefox.exe' htmlwindowname='Report' /&gt;" WaitForReady="INTERACTIVE" />
-                            </ui:WaitUiElementAppear.Target>
-                          </ui:WaitUiElementAppear>
-                          <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click to activate report view window for hotkey" sap2010:WorkflowViewState.IdRef="Click_29" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
-                            <ui:Click.CursorPosition>
-                              <ui:CursorPosition Position="Center">
-                                <ui:CursorPosition.OffsetX>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:CursorPosition.OffsetX>
-                                <ui:CursorPosition.OffsetY>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:CursorPosition.OffsetY>
-                              </ui:CursorPosition>
-                            </ui:Click.CursorPosition>
-                            <ui:Click.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="7e521570d342f0b400b9693c128be34d" Selector="&lt;html app='firefox.exe' htmlwindowname='Report' /&gt;" WaitForReady="INTERACTIVE" />
-                            </ui:Click.Target>
-                          </ui:Click>
-                          <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_37" Level="Info" Message="[&quot;OK: Click to activate report view window for hotkey: &quot; + TR_Report_Name]" />
-                          <ui:AppendLine DisplayName="Append Line" FileName="[TR_Log_TXT_Base_Path + TR_Report_Name + &quot;.txt&quot;]" sap2010:WorkflowViewState.IdRef="AppendLine_6" Text="[&quot;OK: Click to activate report view window for hotkey: &quot; + TR_Report_Name]" />
-                          <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey" EmptyField="False" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="pgdn" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
-                            <ui:SendHotkey.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
-                            </ui:SendHotkey.Target>
-                          </ui:SendHotkey>
-                          <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_38" Level="Info" Message="[&quot;OK: Send hotkey: pgdn for  &quot; + TR_Report_Name]" />
-                          <ui:AppendLine DisplayName="Append Line" FileName="[TR_Log_TXT_Base_Path + TR_Report_Name + &quot;.txt&quot;]" sap2010:WorkflowViewState.IdRef="AppendLine_7" Text="[&quot;OK: Send hotkey: pgdn for  &quot; + TR_Report_Name]" />
-                          <ui:WaitUiElementAppear FoundElement="{x:Null}" DisplayName="Wait Report Generated by the LOGO below" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_10" WaitActive="True" WaitVisible="False">
-                            <ui:WaitUiElementAppear.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="970b9fa8817db7b1ec963049b1085229" Selector="&lt;html app='firefox.exe' htmlwindowname='Report' /&gt;&lt;webctrl tag='IMG' /&gt;" WaitForReady="INTERACTIVE" />
-                            </ui:WaitUiElementAppear.Target>
-                          </ui:WaitUiElementAppear>
-                          <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;OK: Report generated: &quot; + TR_Report_Name]" />
-                          <ui:AppendLine DisplayName="Append Line" FileName="[TR_Log_TXT_Base_Path + TR_Report_Name + &quot;.txt&quot;]" sap2010:WorkflowViewState.IdRef="AppendLine_8" Text="[&quot;OK: Report generated: &quot; + TR_Report_Name]" />
-                          <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot" sap2010:WorkflowViewState.IdRef="TakeScreenshot_2" Screenshot="[TR_Report_View_Screenshot_Image]">
-                            <ui:TakeScreenshot.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
-                            </ui:TakeScreenshot.Target>
-                          </ui:TakeScreenshot>
-                          <Assign sap2010:WorkflowViewState.IdRef="Assign_14">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[TR_Report_View_Screenshot_Path]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[TR_Base_Path +"screenshot\" + TR_Report_Name + "PASS.png"]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <ui:SaveImage DisplayName="Save Image" FileName="[TR_Report_View_Screenshot_Path]" sap2010:WorkflowViewState.IdRef="SaveImage_2" Image="[TR_Report_View_Screenshot_Image]" />
-                          <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Info" Message="[&quot;OK: Report generated, screenshot taken:  &quot; + TR_Report_Name]" />
-                          <ui:AppendLine DisplayName="Append Line" FileName="[TR_Log_TXT_Base_Path + TR_Report_Name + &quot;.txt&quot;]" sap2010:WorkflowViewState.IdRef="AppendLine_9" Text="[&quot;OK: Report generated, screenshot taken:  &quot; + TR_Report_Name]" />
-                          <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey 'firefox.exe Coder'" EmptyField="False" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="w" KeyModifiers="Ctrl" SendWindowMessages="False" SpecialKey="False">
-                            <ui:SendHotkey.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="d8d3fd2eda296b1f4d928af8975b2b72" Selector="&lt;html app='firefox.exe' htmlwindowname='Report' /&gt;" WaitForReady="INTERACTIVE" />
-                            </ui:SendHotkey.Target>
-                          </ui:SendHotkey>
-                          <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap2010:WorkflowViewState.IdRef="Click_20" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
-                            <ui:Click.CursorPosition>
-                              <ui:CursorPosition Position="Center">
-                                <ui:CursorPosition.OffsetX>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:CursorPosition.OffsetX>
-                                <ui:CursorPosition.OffsetY>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:CursorPosition.OffsetY>
-                              </ui:CursorPosition>
-                            </ui:Click.CursorPosition>
-                            <ui:Click.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="249972a371b248e544a4b0350edc715b" Selector="&lt;html app='firefox.exe' title='Management Suite - Report Glossary' /&gt;&lt;webctrl aaname='close' idx='1' tag='BUTTON' /&gt;" WaitForReady="INTERACTIVE" />
-                            </ui:Click.Target>
-                          </ui:Click>
-                          <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Info" Message="[&quot;OK: Close window and go on for the next report: &quot; + TR_Report_Name]" />
-                          <ui:AppendLine DisplayName="Append Line" FileName="[TR_Log_TXT_Base_Path + TR_Report_Name + &quot;.txt&quot;]" sap2010:WorkflowViewState.IdRef="AppendLine_10" Text="[&quot;OK: Close window and go on for the next report: &quot; + TR_Report_Name]" />
+                          <ui:UiElementExists DisplayName="Element Exists 'DIV dvCustomSearchPopup'" Exists="[ExistReportCustomSearchPopup]" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                            <ui:UiElementExists.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="41aa8663fe4aa736355d64dd54e0f856" Selector="&lt;html app='firefox.exe' title='Management Suite - Report Glossary' /&gt;&lt;webctrl id='dvCustomSearchPopup' tag='DIV' /&gt;" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
+                            </ui:UiElementExists.Target>
+                          </ui:UiElementExists>
+                          <If Condition="[ExistReportCustomSearchPopup]" sap2010:WorkflowViewState.IdRef="If_10">
+                            <If.Then>
+                              <Sequence sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                <ui:WaitUiElementAppear FoundElement="{x:Null}" DisplayName="Find 'DIV  dvCustomSearchPopup'" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_28" WaitActive="False" WaitVisible="False">
+                                  <ui:WaitUiElementAppear.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="d7ee7142f50524793bb990b90be4ad34" Selector="&lt;html app='firefox.exe' title='Management Suite - Report Glossary' /&gt;&lt;webctrl id='dvCustomSearchPopup' tag='DIV' /&gt;" WaitForReady="INTERACTIVE" />
+                                  </ui:WaitUiElementAppear.Target>
+                                </ui:WaitUiElementAppear>
+                                <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_48" Level="Info" Message="[&quot;OK: Find DIV  dvCustomSearchPopup: &quot; + TR_Report_Name]" />
+                                <ui:AppendLine DisplayName="Append Line" FileName="[TR_Log_TXT_Base_Path + TR_Report_Name + &quot;.txt&quot;]" sap2010:WorkflowViewState.IdRef="AppendLine_18" Text="[&quot;OK: Find DIV  dvCustomSearchPopup: &quot; + TR_Report_Name]" />
+                                <ui:WaitUiElementAppear FoundElement="{x:Null}" DisplayName="Find 'BUTTON  btnViewReport'" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_29" WaitActive="False" WaitVisible="False">
+                                  <ui:WaitUiElementAppear.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="ad7ad78265b286ba7038e307cd2000cb" Selector="&lt;html app='firefox.exe' title='Management Suite - Report Glossary' /&gt;&lt;webctrl id='btnViewReport' tag='BUTTON' /&gt;" WaitForReady="INTERACTIVE" />
+                                  </ui:WaitUiElementAppear.Target>
+                                </ui:WaitUiElementAppear>
+                                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  btnViewReport'" sap2010:WorkflowViewState.IdRef="Click_42" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                  <ui:Click.CursorPosition>
+                                    <ui:CursorPosition Position="Center">
+                                      <ui:CursorPosition.OffsetX>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetX>
+                                      <ui:CursorPosition.OffsetY>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetY>
+                                    </ui:CursorPosition>
+                                  </ui:Click.CursorPosition>
+                                  <ui:Click.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="3ee53bf0b47e25a59b9b7306291679b8" Selector="&lt;html app='firefox.exe' title='Management Suite - Report Glossary' /&gt;&lt;webctrl id='btnViewReport' tag='BUTTON' /&gt;" WaitForReady="INTERACTIVE" />
+                                  </ui:Click.Target>
+                                </ui:Click>
+                                <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_49" Level="Info" Message="[&quot;OK: Click BUTTON  btnViewReport : &quot; + TR_Report_Name]" />
+                                <ui:AppendLine DisplayName="Append Line" FileName="[TR_Log_TXT_Base_Path + TR_Report_Name + &quot;.txt&quot;]" sap2010:WorkflowViewState.IdRef="AppendLine_19" Text="[&quot;OK: Click BUTTON  btnViewReport : &quot; + TR_Report_Name]" />
+                                <ui:WaitUiElementAppear FoundElement="{x:Null}" DisplayName="Find Element 'firefox.exe Data'" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_30" WaitActive="False" WaitVisible="False">
+                                  <ui:WaitUiElementAppear.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="4a1780c7e1ce311d31b2fdd1ccfa4915" Selector="&lt;html app='firefox.exe' htmlwindowname='Report' /&gt;" WaitForReady="INTERACTIVE" />
+                                  </ui:WaitUiElementAppear.Target>
+                                </ui:WaitUiElementAppear>
+                                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click to activate report view window for hotkey" sap2010:WorkflowViewState.IdRef="Click_43" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                  <ui:Click.CursorPosition>
+                                    <ui:CursorPosition Position="Center">
+                                      <ui:CursorPosition.OffsetX>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetX>
+                                      <ui:CursorPosition.OffsetY>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetY>
+                                    </ui:CursorPosition>
+                                  </ui:Click.CursorPosition>
+                                  <ui:Click.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="7e521570d342f0b400b9693c128be34d" Selector="&lt;html app='firefox.exe' htmlwindowname='Report' /&gt;" WaitForReady="INTERACTIVE" />
+                                  </ui:Click.Target>
+                                </ui:Click>
+                                <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_50" Level="Info" Message="[&quot;OK: Click to activate report view window for hotkey: &quot; + TR_Report_Name]" />
+                                <ui:AppendLine DisplayName="Append Line" FileName="[TR_Log_TXT_Base_Path + TR_Report_Name + &quot;.txt&quot;]" sap2010:WorkflowViewState.IdRef="AppendLine_20" Text="[&quot;OK: Click to activate report view window for hotkey: &quot; + TR_Report_Name]" />
+                                <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_51" Level="Info" Message="[&quot;OK: Send hotkey: pgdn for  &quot; + TR_Report_Name]" />
+                                <ui:AppendLine DisplayName="Append Line" FileName="[TR_Log_TXT_Base_Path + TR_Report_Name + &quot;.txt&quot;]" sap2010:WorkflowViewState.IdRef="AppendLine_21" Text="[&quot;OK: Send hotkey: pgdn for  &quot; + TR_Report_Name]" />
+                                <ui:WaitUiElementAppear FoundElement="{x:Null}" DisplayName="Wait Report Generated by the LOGO below" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_31" WaitActive="True" WaitVisible="False">
+                                  <ui:WaitUiElementAppear.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="970b9fa8817db7b1ec963049b1085229" Selector="&lt;html app='firefox.exe' htmlwindowname='Report' /&gt;&lt;webctrl tag='IMG' /&gt;" WaitForReady="INTERACTIVE" />
+                                  </ui:WaitUiElementAppear.Target>
+                                </ui:WaitUiElementAppear>
+                                <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey" EmptyField="False" sap2010:WorkflowViewState.IdRef="SendHotkey_10" Key="pgdn" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+                                  <ui:SendHotkey.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+                                  </ui:SendHotkey.Target>
+                                </ui:SendHotkey>
+                                <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_52" Level="Info" Message="[&quot;OK: Report generated: &quot; + TR_Report_Name]" />
+                                <ui:AppendLine DisplayName="Append Line" FileName="[TR_Log_TXT_Base_Path + TR_Report_Name + &quot;.txt&quot;]" sap2010:WorkflowViewState.IdRef="AppendLine_22" Text="[&quot;OK: Report generated: &quot; + TR_Report_Name]" />
+                                <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot" sap2010:WorkflowViewState.IdRef="TakeScreenshot_7" Screenshot="[TR_Report_View_Screenshot_Image]">
+                                  <ui:TakeScreenshot.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+                                  </ui:TakeScreenshot.Target>
+                                </ui:TakeScreenshot>
+                                <Assign sap2010:WorkflowViewState.IdRef="Assign_17">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[TR_Report_View_Screenshot_Path]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">[TR_Base_Path +"screenshot\" + TR_Report_Name + "PASS.png"]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <ui:SaveImage DisplayName="Save Image" FileName="[TR_Report_View_Screenshot_Path]" sap2010:WorkflowViewState.IdRef="SaveImage_7" Image="[TR_Report_View_Screenshot_Image]" />
+                                <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_53" Level="Info" Message="[&quot;OK: Report generated, screenshot taken:  &quot; + TR_Report_Name]" />
+                                <ui:AppendLine DisplayName="Append Line" FileName="[TR_Log_TXT_Base_Path + TR_Report_Name + &quot;.txt&quot;]" sap2010:WorkflowViewState.IdRef="AppendLine_23" Text="[&quot;OK: Report generated, screenshot taken:  &quot; + TR_Report_Name]" />
+                                <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey 'firefox.exe Coder'" EmptyField="False" sap2010:WorkflowViewState.IdRef="SendHotkey_11" Key="w" KeyModifiers="Ctrl" SendWindowMessages="False" SpecialKey="False">
+                                  <ui:SendHotkey.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="d8d3fd2eda296b1f4d928af8975b2b72" Selector="&lt;html app='firefox.exe' htmlwindowname='Report' /&gt;" WaitForReady="INTERACTIVE" />
+                                  </ui:SendHotkey.Target>
+                                </ui:SendHotkey>
+                                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap2010:WorkflowViewState.IdRef="Click_44" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                  <ui:Click.CursorPosition>
+                                    <ui:CursorPosition Position="Center">
+                                      <ui:CursorPosition.OffsetX>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetX>
+                                      <ui:CursorPosition.OffsetY>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetY>
+                                    </ui:CursorPosition>
+                                  </ui:Click.CursorPosition>
+                                  <ui:Click.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="249972a371b248e544a4b0350edc715b" Selector="&lt;html app='firefox.exe' title='Management Suite - Report Glossary' /&gt;&lt;webctrl aaname='close' idx='1' tag='BUTTON' /&gt;" WaitForReady="INTERACTIVE" />
+                                  </ui:Click.Target>
+                                </ui:Click>
+                                <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_54" Level="Info" Message="[&quot;OK: Close window and go on for the next report: &quot; + TR_Report_Name]" />
+                                <ui:AppendLine DisplayName="Append Line" FileName="[TR_Log_TXT_Base_Path + TR_Report_Name + &quot;.txt&quot;]" sap2010:WorkflowViewState.IdRef="AppendLine_24" Text="[&quot;OK: Close window and go on for the next report: &quot; + TR_Report_Name]" />
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence DisplayName="Take screenshot straightly ">
+                                <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot" Screenshot="[TR_Report_View_Screenshot_Image]">
+                                  <ui:TakeScreenshot.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+                                  </ui:TakeScreenshot.Target>
+                                  <sap2010:WorkflowViewState.IdRef>TakeScreenshot_8</sap2010:WorkflowViewState.IdRef>
+                                </ui:TakeScreenshot>
+                                <Assign>
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[TR_Report_View_Screenshot_Path]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">[TR_Base_Path +"screenshot\" + TR_Report_Name + "PASS.png"]</InArgument>
+                                  </Assign.Value>
+                                  <sap2010:WorkflowViewState.IdRef>Assign_18</sap2010:WorkflowViewState.IdRef>
+                                </Assign>
+                                <ui:SaveImage DisplayName="Save Image" FileName="[TR_Report_View_Screenshot_Path]" Image="[TR_Report_View_Screenshot_Image]" sap2010:WorkflowViewState.IdRef="SaveImage_8" />
+                                <ui:LogMessage DisplayName="Log Message" Level="Info" Message="[&quot;OK: Report generated, screenshot taken:  &quot; + TR_Report_Name]" sap2010:WorkflowViewState.IdRef="LogMessage_55" />
+                                <ui:AppendLine DisplayName="Append Line" FileName="[TR_Log_TXT_Base_Path + TR_Report_Name + &quot;.txt&quot;]" Text="[&quot;OK: Report generated, screenshot taken:  &quot; + TR_Report_Name]" sap2010:WorkflowViewState.IdRef="AppendLine_25" />
+                                <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey 'firefox.exe Coder'" EmptyField="False" Key="back" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+                                  <ui:SendHotkey.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="d8d3fd2eda296b1f4d928af8975b2b72" Selector="&lt;html app='firefox.exe' htmlwindowname='Report' /&gt;" WaitForReady="INTERACTIVE" />
+                                  </ui:SendHotkey.Target>
+                                  <sap2010:WorkflowViewState.IdRef>SendHotkey_12</sap2010:WorkflowViewState.IdRef>
+                                </ui:SendHotkey>
+                                <sap2010:WorkflowViewState.IdRef>Sequence_19</sap2010:WorkflowViewState.IdRef>
+                              </Sequence>
+                            </If.Else>
+                          </If>
                         </Sequence>
                       </If.Then>
                     </If>
@@ -400,7 +439,7 @@
                     </Sequence>
                   </TryCatch.Finally>
                 </TryCatch>
-                <If Condition="[Search_Result_OP_Reports_Number &gt;= 1]" DisplayName="If OP_Reports_Number = 1" sap2010:WorkflowViewState.IdRef="If_6">
+                <If Condition="[Search_Result_OP_Reports_Number &gt;= 1]" DisplayName="If OP_Reports_Number &gt;= 1" sap2010:WorkflowViewState.IdRef="If_6">
                   <If.Then>
                     <Sequence sap2010:WorkflowViewState.IdRef="Sequence_10">
                       <ui:Click DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="1000" DisplayName="Click Outpatient Standard Reports to expand report" sap2010:WorkflowViewState.IdRef="Click_30" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
@@ -532,7 +571,7 @@
                     </Sequence>
                   </If.Then>
                 </If>
-                <If Condition="[Search_Result_Enterprise_Reports_Number &gt;= 1]" DisplayName="If If Enterprise_Reports_Num=1" sap2010:WorkflowViewState.IdRef="If_7">
+                <If Condition="[Search_Result_Enterprise_Reports_Number &gt;= 1]" DisplayName="If If Enterprise_Reports_Num&gt;=1" sap2010:WorkflowViewState.IdRef="If_7">
                   <If.Then>
                     <Sequence sap2010:WorkflowViewState.IdRef="Sequence_11">
                       <Assign sap2010:WorkflowViewState.IdRef="Assign_12">
@@ -772,11 +811,11 @@
         </ActivityAction>
       </ui:ForEach.Body>
     </ui:ForEach>
-    <sads:DebugSymbol.Symbol>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</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>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</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
-      <sap2010:ViewStateData Id="ReadCsvFile_1" sap:VirtualizedContainerService.HintSize="537.6,52.8">
+      <sap2010:ViewStateData Id="ReadCsvFile_1" sap:VirtualizedContainerService.HintSize="918,51">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -784,7 +823,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="FilterDataTable_1" sap:VirtualizedContainerService.HintSize="537.6,52.8">
+      <sap2010:ViewStateData Id="FilterDataTable_1" sap:VirtualizedContainerService.HintSize="918,51">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -800,7 +839,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="ForEachRow_1" sap:VirtualizedContainerService.HintSize="537.6,52.8">
+      <sap2010:ViewStateData Id="ForEachRow_1" sap:VirtualizedContainerService.HintSize="918,51">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -808,68 +847,90 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="LogMessage_22" sap:VirtualizedContainerService.HintSize="481.6,92.8" />
-      <sap2010:ViewStateData Id="InvokeWorkflowFile_1" sap:VirtualizedContainerService.HintSize="314.4,88" />
-      <sap2010:ViewStateData Id="Sequence_17" sap:VirtualizedContainerService.HintSize="336.8,212.8">
+      <sap2010:ViewStateData Id="LogMessage_22" sap:VirtualizedContainerService.HintSize="862,91" />
+      <sap2010:ViewStateData Id="InvokeWorkflowFile_1" sap:VirtualizedContainerService.HintSize="314,87" />
+      <sap2010:ViewStateData Id="Sequence_17" sap:VirtualizedContainerService.HintSize="336,211">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="CommentOut_1" sap:VirtualizedContainerService.HintSize="481.6,291.2" />
-      <sap2010:ViewStateData Id="LogMessage_47" sap:VirtualizedContainerService.HintSize="481.6,92.8" />
-      <sap2010:ViewStateData Id="TypeInto_2" sap:VirtualizedContainerService.HintSize="481.6,135.2" />
-      <sap2010:ViewStateData Id="LogMessage_16" sap:VirtualizedContainerService.HintSize="481.6,92.8" />
-      <sap2010:ViewStateData Id="Click_1" sap:VirtualizedContainerService.HintSize="481.6,107.2" />
-      <sap2010:ViewStateData Id="GetValue_1" sap:VirtualizedContainerService.HintSize="481.6,107.2" />
-      <sap2010:ViewStateData Id="GetValue_4" sap:VirtualizedContainerService.HintSize="481.6,107.2" />
-      <sap2010:ViewStateData Id="GetValue_5" sap:VirtualizedContainerService.HintSize="481.6,107.2" />
-      <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="481.6,60" />
-      <sap2010:ViewStateData Id="Assign_4" sap:VirtualizedContainerService.HintSize="481.6,60" />
-      <sap2010:ViewStateData Id="Assign_5" sap:VirtualizedContainerService.HintSize="481.6,60" />
-      <sap2010:ViewStateData Id="Assign_13" sap:VirtualizedContainerService.HintSize="314.4,60" />
-      <sap2010:ViewStateData Id="AppendLine_1" sap:VirtualizedContainerService.HintSize="314.4,88" />
-      <sap2010:ViewStateData Id="Click_3" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
-      <sap2010:ViewStateData Id="LogMessage_17" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
-      <sap2010:ViewStateData Id="AppendLine_2" sap:VirtualizedContainerService.HintSize="314.4,88" />
-      <sap2010:ViewStateData Id="Click_12" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
-      <sap2010:ViewStateData Id="LogMessage_18" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
-      <sap2010:ViewStateData Id="AppendLine_3" sap:VirtualizedContainerService.HintSize="314.4,88" />
-      <sap2010:ViewStateData Id="WaitUiElementAppear_6" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
-      <sap2010:ViewStateData Id="LogMessage_19" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
-      <sap2010:ViewStateData Id="AppendLine_4" sap:VirtualizedContainerService.HintSize="314.4,88" />
-      <sap2010:ViewStateData Id="WaitUiElementAppear_9" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
-      <sap2010:ViewStateData Id="Click_19" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
-      <sap2010:ViewStateData Id="LogMessage_10" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
-      <sap2010:ViewStateData Id="AppendLine_5" sap:VirtualizedContainerService.HintSize="314.4,88" />
-      <sap2010:ViewStateData Id="WaitUiElementAppear_25" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
-      <sap2010:ViewStateData Id="Click_29" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
-      <sap2010:ViewStateData Id="LogMessage_37" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
-      <sap2010:ViewStateData Id="AppendLine_6" sap:VirtualizedContainerService.HintSize="314.4,88" />
-      <sap2010:ViewStateData Id="SendHotkey_4" sap:VirtualizedContainerService.HintSize="314.4,117.6" />
-      <sap2010:ViewStateData Id="LogMessage_38" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
-      <sap2010:ViewStateData Id="AppendLine_7" sap:VirtualizedContainerService.HintSize="314.4,88" />
-      <sap2010:ViewStateData Id="WaitUiElementAppear_10" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
-      <sap2010:ViewStateData Id="LogMessage_11" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
-      <sap2010:ViewStateData Id="AppendLine_8" sap:VirtualizedContainerService.HintSize="314.4,88" />
-      <sap2010:ViewStateData Id="TakeScreenshot_2" sap:VirtualizedContainerService.HintSize="314.4,68.8" />
-      <sap2010:ViewStateData Id="Assign_14" sap:VirtualizedContainerService.HintSize="314.4,60" />
-      <sap2010:ViewStateData Id="SaveImage_2" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
-      <sap2010:ViewStateData Id="LogMessage_20" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
-      <sap2010:ViewStateData Id="AppendLine_9" sap:VirtualizedContainerService.HintSize="314.4,88" />
-      <sap2010:ViewStateData Id="SendHotkey_1" sap:VirtualizedContainerService.HintSize="314.4,156" />
-      <sap2010:ViewStateData Id="Click_20" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
-      <sap2010:ViewStateData Id="LogMessage_21" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
-      <sap2010:ViewStateData Id="AppendLine_10" sap:VirtualizedContainerService.HintSize="314.4,88" />
-      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="336.8,4680">
+      <sap2010:ViewStateData Id="CommentOut_1" sap:VirtualizedContainerService.HintSize="862,289" />
+      <sap2010:ViewStateData Id="LogMessage_47" sap:VirtualizedContainerService.HintSize="862,91" />
+      <sap2010:ViewStateData Id="TypeInto_2" sap:VirtualizedContainerService.HintSize="862,134" />
+      <sap2010:ViewStateData Id="LogMessage_16" sap:VirtualizedContainerService.HintSize="862,91" />
+      <sap2010:ViewStateData Id="Click_1" sap:VirtualizedContainerService.HintSize="862,106" />
+      <sap2010:ViewStateData Id="GetValue_1" sap:VirtualizedContainerService.HintSize="862,106" />
+      <sap2010:ViewStateData Id="GetValue_4" sap:VirtualizedContainerService.HintSize="862,106" />
+      <sap2010:ViewStateData Id="GetValue_5" sap:VirtualizedContainerService.HintSize="862,106" />
+      <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="862,60" />
+      <sap2010:ViewStateData Id="Assign_4" sap:VirtualizedContainerService.HintSize="862,60" />
+      <sap2010:ViewStateData Id="Assign_5" sap:VirtualizedContainerService.HintSize="862,60" />
+      <sap2010:ViewStateData Id="Assign_13" sap:VirtualizedContainerService.HintSize="697,60" />
+      <sap2010:ViewStateData Id="AppendLine_1" sap:VirtualizedContainerService.HintSize="697,87" />
+      <sap2010:ViewStateData Id="Click_3" sap:VirtualizedContainerService.HintSize="697,106" />
+      <sap2010:ViewStateData Id="LogMessage_17" sap:VirtualizedContainerService.HintSize="697,91" />
+      <sap2010:ViewStateData Id="AppendLine_2" sap:VirtualizedContainerService.HintSize="697,87" />
+      <sap2010:ViewStateData Id="Click_12" sap:VirtualizedContainerService.HintSize="697,106" />
+      <sap2010:ViewStateData Id="LogMessage_18" sap:VirtualizedContainerService.HintSize="697,91" />
+      <sap2010:ViewStateData Id="AppendLine_3" sap:VirtualizedContainerService.HintSize="697,87" />
+      <sap2010:ViewStateData Id="UiElementExists_3" sap:VirtualizedContainerService.HintSize="697,106" />
+      <sap2010:ViewStateData Id="WaitUiElementAppear_28" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="LogMessage_48" sap:VirtualizedContainerService.HintSize="314,91" />
+      <sap2010:ViewStateData Id="AppendLine_18" sap:VirtualizedContainerService.HintSize="314,87" />
+      <sap2010:ViewStateData Id="WaitUiElementAppear_29" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="Click_42" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="LogMessage_49" sap:VirtualizedContainerService.HintSize="314,91" />
+      <sap2010:ViewStateData Id="AppendLine_19" sap:VirtualizedContainerService.HintSize="314,87" />
+      <sap2010:ViewStateData Id="WaitUiElementAppear_30" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="Click_43" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="LogMessage_50" sap:VirtualizedContainerService.HintSize="314,91" />
+      <sap2010:ViewStateData Id="AppendLine_20" sap:VirtualizedContainerService.HintSize="314,87" />
+      <sap2010:ViewStateData Id="LogMessage_51" sap:VirtualizedContainerService.HintSize="314,91" />
+      <sap2010:ViewStateData Id="AppendLine_21" sap:VirtualizedContainerService.HintSize="314,87" />
+      <sap2010:ViewStateData Id="WaitUiElementAppear_31" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="SendHotkey_10" sap:VirtualizedContainerService.HintSize="314,116" />
+      <sap2010:ViewStateData Id="LogMessage_52" sap:VirtualizedContainerService.HintSize="314,91" />
+      <sap2010:ViewStateData Id="AppendLine_22" sap:VirtualizedContainerService.HintSize="314,87" />
+      <sap2010:ViewStateData Id="TakeScreenshot_7" sap:VirtualizedContainerService.HintSize="314,68" />
+      <sap2010:ViewStateData Id="Assign_17" sap:VirtualizedContainerService.HintSize="314,60" />
+      <sap2010:ViewStateData Id="SaveImage_7" sap:VirtualizedContainerService.HintSize="314,92" />
+      <sap2010:ViewStateData Id="LogMessage_53" sap:VirtualizedContainerService.HintSize="314,91" />
+      <sap2010:ViewStateData Id="AppendLine_23" sap:VirtualizedContainerService.HintSize="314,87" />
+      <sap2010:ViewStateData Id="SendHotkey_11" sap:VirtualizedContainerService.HintSize="314,154" />
+      <sap2010:ViewStateData Id="Click_44" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="LogMessage_54" sap:VirtualizedContainerService.HintSize="314,91" />
+      <sap2010:ViewStateData Id="AppendLine_24" sap:VirtualizedContainerService.HintSize="314,87" />
+      <sap2010:ViewStateData Id="Sequence_18" sap:VirtualizedContainerService.HintSize="336,3602">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="If_1" sap:VirtualizedContainerService.HintSize="464,4829.6">
+      <sap2010:ViewStateData Id="TakeScreenshot_8" sap:VirtualizedContainerService.HintSize="314,68" />
+      <sap2010:ViewStateData Id="Assign_18" sap:VirtualizedContainerService.HintSize="314,60" />
+      <sap2010:ViewStateData Id="SaveImage_8" sap:VirtualizedContainerService.HintSize="314,92" />
+      <sap2010:ViewStateData Id="LogMessage_55" sap:VirtualizedContainerService.HintSize="314,91" />
+      <sap2010:ViewStateData Id="AppendLine_25" sap:VirtualizedContainerService.HintSize="314,87" />
+      <sap2010:ViewStateData Id="SendHotkey_12" sap:VirtualizedContainerService.HintSize="314,154" />
+      <sap2010:ViewStateData Id="Sequence_19" sap:VirtualizedContainerService.HintSize="336,876">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="If_10" sap:VirtualizedContainerService.HintSize="697,3750" />
+      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="719,5055">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="If_1" sap:VirtualizedContainerService.HintSize="844,5203">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -877,8 +938,8 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Assign_15" sap:VirtualizedContainerService.HintSize="243.2,60" />
-      <sap2010:ViewStateData Id="Catch`1_2" sap:VirtualizedContainerService.HintSize="467.2,130.4">
+      <sap2010:ViewStateData Id="Assign_15" sap:VirtualizedContainerService.HintSize="242,60" />
+      <sap2010:ViewStateData Id="Catch`1_2" sap:VirtualizedContainerService.HintSize="848,129">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -886,17 +947,17 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="AppendLine_17" sap:VirtualizedContainerService.HintSize="414.4,88" />
-      <sap2010:ViewStateData Id="WordAppendText_2" sap:VirtualizedContainerService.HintSize="314.4,60" />
-      <sap2010:ViewStateData Id="WordAddImage_2" sap:VirtualizedContainerService.HintSize="314.4,60" />
-      <sap2010:ViewStateData Id="Sequence_15" sap:VirtualizedContainerService.HintSize="336.8,284.8">
+      <sap2010:ViewStateData Id="AppendLine_17" sap:VirtualizedContainerService.HintSize="414,87" />
+      <sap2010:ViewStateData Id="WordAppendText_2" sap:VirtualizedContainerService.HintSize="314,59" />
+      <sap2010:ViewStateData Id="WordAddImage_2" sap:VirtualizedContainerService.HintSize="314,59" />
+      <sap2010:ViewStateData Id="Sequence_15" sap:VirtualizedContainerService.HintSize="336,282">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="WordApplicationScope_2" sap:VirtualizedContainerService.HintSize="414.4,394.4">
+      <sap2010:ViewStateData Id="WordApplicationScope_2" sap:VirtualizedContainerService.HintSize="414,391">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -904,19 +965,26 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Sequence_16" sap:VirtualizedContainerService.HintSize="436.8,647.2">
+      <sap2010:ViewStateData Id="Sequence_16" sap:VirtualizedContainerService.HintSize="436,642">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="TryCatch_2" sap:VirtualizedContainerService.HintSize="481.6,5860" />
-      <sap2010:ViewStateData Id="Click_30" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
-      <sap2010:ViewStateData Id="LogMessage_23" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
-      <sap2010:ViewStateData Id="Click_31" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
-      <sap2010:ViewStateData Id="LogMessage_24" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
-      <sap2010:ViewStateData Id="WaitUiElementAppear_19" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
+      <sap2010:ViewStateData Id="TryCatch_2" sap:VirtualizedContainerService.HintSize="862,6224">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Click_30" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="LogMessage_23" sap:VirtualizedContainerService.HintSize="314,91" />
+      <sap2010:ViewStateData Id="Click_31" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="LogMessage_24" sap:VirtualizedContainerService.HintSize="314,91" />
+      <sap2010:ViewStateData Id="WaitUiElementAppear_19" sap:VirtualizedContainerService.HintSize="314,106" />
       <sap2010:ViewStateData Id="LogMessage_25" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
       <sap2010:ViewStateData Id="WaitUiElementAppear_20" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
       <sap2010:ViewStateData Id="Click_32" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
@@ -936,14 +1004,14 @@
       <sap2010:ViewStateData Id="SendHotkey_6" sap:VirtualizedContainerService.HintSize="314.4,156" />
       <sap2010:ViewStateData Id="Click_34" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
       <sap2010:ViewStateData Id="LogMessage_29" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
-      <sap2010:ViewStateData Id="Sequence_10" sap:VirtualizedContainerService.HintSize="336.8,3432.8">
+      <sap2010:ViewStateData Id="Sequence_10" sap:VirtualizedContainerService.HintSize="336,3426">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="If_6" sap:VirtualizedContainerService.HintSize="481.6,52.8">
+      <sap2010:ViewStateData Id="If_6" sap:VirtualizedContainerService.HintSize="862,51">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -951,11 +1019,11 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Assign_12" sap:VirtualizedContainerService.HintSize="314.4,60" />
-      <sap2010:ViewStateData Id="Click_35" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
-      <sap2010:ViewStateData Id="LogMessage_30" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
-      <sap2010:ViewStateData Id="Click_36" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
-      <sap2010:ViewStateData Id="LogMessage_31" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
+      <sap2010:ViewStateData Id="Assign_12" sap:VirtualizedContainerService.HintSize="314,60" />
+      <sap2010:ViewStateData Id="Click_35" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="LogMessage_30" sap:VirtualizedContainerService.HintSize="314,91" />
+      <sap2010:ViewStateData Id="Click_36" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="LogMessage_31" sap:VirtualizedContainerService.HintSize="314,91" />
       <sap2010:ViewStateData Id="WaitUiElementAppear_22" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
       <sap2010:ViewStateData Id="LogMessage_32" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
       <sap2010:ViewStateData Id="WaitUiElementAppear_23" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
@@ -975,14 +1043,14 @@
       <sap2010:ViewStateData Id="SendHotkey_8" sap:VirtualizedContainerService.HintSize="314.4,156" />
       <sap2010:ViewStateData Id="Click_39" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
       <sap2010:ViewStateData Id="LogMessage_36" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
-      <sap2010:ViewStateData Id="Sequence_11" sap:VirtualizedContainerService.HintSize="336.8,3432.8">
+      <sap2010:ViewStateData Id="Sequence_11" sap:VirtualizedContainerService.HintSize="336,3427">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="If_7" sap:VirtualizedContainerService.HintSize="481.6,52.8">
+      <sap2010:ViewStateData Id="If_7" sap:VirtualizedContainerService.HintSize="862,51">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -990,7 +1058,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Sequence_3" sap:VirtualizedContainerService.HintSize="504,7964">
+      <sap2010:ViewStateData Id="Sequence_3" sap:VirtualizedContainerService.HintSize="884,8310">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1006,7 +1074,7 @@
       <sap2010:ViewStateData Id="Assign_16" sap:VirtualizedContainerService.HintSize="314.4,60" />
       <sap2010:ViewStateData Id="SaveImage_1" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
       <sap2010:ViewStateData Id="AppendLine_12" sap:VirtualizedContainerService.HintSize="314.4,88" />
-      <sap2010:ViewStateData Id="Sequence_6" sap:VirtualizedContainerService.HintSize="200,52.8">
+      <sap2010:ViewStateData Id="Sequence_6" sap:VirtualizedContainerService.HintSize="200,51">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1014,7 +1082,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Catch`1_1" sap:VirtualizedContainerService.HintSize="507.2,123.2">
+      <sap2010:ViewStateData Id="Catch`1_1" sap:VirtualizedContainerService.HintSize="888,120">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1022,10 +1090,10 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="LogMessage_9" sap:VirtualizedContainerService.HintSize="314.4,92.8" />
-      <sap2010:ViewStateData Id="AppendLine_13" sap:VirtualizedContainerService.HintSize="314.4,88" />
-      <sap2010:ViewStateData Id="UiElementExists_1" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
-      <sap2010:ViewStateData Id="UiElementExists_2" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
+      <sap2010:ViewStateData Id="LogMessage_9" sap:VirtualizedContainerService.HintSize="314,91" />
+      <sap2010:ViewStateData Id="AppendLine_13" sap:VirtualizedContainerService.HintSize="314,87" />
+      <sap2010:ViewStateData Id="UiElementExists_1" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="UiElementExists_2" sap:VirtualizedContainerService.HintSize="314,106" />
       <sap2010:ViewStateData Id="Click_40" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
       <sap2010:ViewStateData Id="SendHotkey_9" sap:VirtualizedContainerService.HintSize="314.4,156" />
       <sap2010:ViewStateData Id="Sequence_13" sap:VirtualizedContainerService.HintSize="336.8,428">
@@ -1035,7 +1103,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="If_8" sap:VirtualizedContainerService.HintSize="314.4,52.8">
+      <sap2010:ViewStateData Id="If_8" sap:VirtualizedContainerService.HintSize="314,51">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1044,7 +1112,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
       <sap2010:ViewStateData Id="Click_41" sap:VirtualizedContainerService.HintSize="314.4,107.2" />
-      <sap2010:ViewStateData Id="If_9" sap:VirtualizedContainerService.HintSize="314.4,52.8">
+      <sap2010:ViewStateData Id="If_9" sap:VirtualizedContainerService.HintSize="314,51">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1052,22 +1120,14 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Sequence_7" sap:VirtualizedContainerService.HintSize="336.8,825.6">
+      <sap2010:ViewStateData Id="Sequence_7" sap:VirtualizedContainerService.HintSize="336,816">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="TryCatch_1" sap:VirtualizedContainerService.HintSize="521.6,9165.6">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="ForEach`1_1" sap:VirtualizedContainerService.HintSize="537.6,9300">
+      <sap2010:ViewStateData Id="TryCatch_1" sap:VirtualizedContainerService.HintSize="902,9496">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1075,14 +1135,22 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="560,9703.2">
+      <sap2010:ViewStateData Id="ForEach`1_1" sap:VirtualizedContainerService.HintSize="918,9630">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="940,10027">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="ActivityBuilder_1" sap:VirtualizedContainerService.HintSize="600,9783.2">
+      <sap2010:ViewStateData Id="ActivityBuilder_1" sap:VirtualizedContainerService.HintSize="980,10107">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>

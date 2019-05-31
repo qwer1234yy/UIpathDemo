@@ -1,0 +1,11 @@
+OK: Start to run for : OP Standard - Medicare medical necessity flags
+OK: Click to expand report: OP Standard - Medicare medical necessity flags
+OK: Double Click the First Report Name below: OP Standard - Medicare medical necessity flags
+OK: Find DIV  dvCustomSearchPopup: OP Standard - Medicare medical necessity flags
+OK: Click BUTTON  btnViewReport : OP Standard - Medicare medical necessity flags
+OK: Click to activate report view window for hotkey: OP Standard - Medicare medical necessity flags
+OK: Send hotkey: pgdn for  OP Standard - Medicare medical necessity flags
+OK: Report generated: OP Standard - Medicare medical necessity flags
+OK: Report generated, screenshot taken:  OP Standard - Medicare medical necessity flags
+OK: Close window and go on for the next report: OP Standard - Medicare medical necessity flags
+OK: Finished one loop for this report: OP Standard - Medicare medical necessity flags
