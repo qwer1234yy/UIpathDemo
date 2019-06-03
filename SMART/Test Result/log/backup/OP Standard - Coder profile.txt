@@ -1,0 +1,11 @@
+OK: Start to run for : OP Standard - Coder profile
+OK: Click to expand report: OP Standard - Coder profile
+OK: Double Click the First Report Name below: OP Standard - Coder profile
+Element Exists 'DIV  dvCustomSearchPopup' True
+OK: Find DIV  dvCustomSearchPopup: OP Standard - Coder profile
+OK: Click BUTTON  btnViewReport : OP Standard - Coder profile
+OK: Click to activate report view window for hotkey: OP Standard - Coder profile
+OK: Send hotkey: pgdn for  OP Standard - Coder profile
+OK: Report generated: OP Standard - Coder profile
+OK: Report generated, screenshot taken:  OP Standard - Coder profile
+OK: Close window and go on for the next report: OP Standard - Coder profile

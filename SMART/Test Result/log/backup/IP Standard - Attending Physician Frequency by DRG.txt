@@ -1,0 +1,11 @@
+OK: Start to run for : IP Standard - Attending Physician Frequency by DRG
+OK: Click to expand report: IP Standard - Attending Physician Frequency by DRG
+OK: Double Click the First Report Name below: IP Standard - Attending Physician Frequency by DRG
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Attending Physician Frequency by DRG
+OK: Click BUTTON  btnViewReport : IP Standard - Attending Physician Frequency by DRG
+OK: Click to activate report view window for hotkey: IP Standard - Attending Physician Frequency by DRG
+OK: Send hotkey: pgdn for  IP Standard - Attending Physician Frequency by DRG
+OK: Report generated: IP Standard - Attending Physician Frequency by DRG
+OK: Report generated, screenshot taken:  IP Standard - Attending Physician Frequency by DRG
+OK: Close window and go on for the next report: IP Standard - Attending Physician Frequency by DRG
+OK: Finished one loop for this report: IP Standard - Attending Physician Frequency by DRG

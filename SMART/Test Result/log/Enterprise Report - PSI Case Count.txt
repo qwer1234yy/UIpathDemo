@@ -1,0 +1,7 @@
+OK: Start to run for : Enterprise Report - PSI Case Count
+OK: Double Click the First Report Name below: Enterprise Report - PSI Case Count
+Element Exists 'DIV  dvCustomSearchPopup: False
+OK: begin to wait for Footer display
+OK: Report generated, screenshot taken:  Enterprise Report - PSI Case Count
+OK: come back to report structure page from   HTML5 pageEnterprise Report - PSI Case Count
+OK: Finished one loop for this report: Enterprise Report - PSI Case Count

@@ -1,0 +1,12 @@
+OK: Start to run for : OP Standard - Frequency Anlaysis
+OK: Click to expand report: OP Standard - Frequency Anlaysis
+OK: Double Click the First Report Name below: OP Standard - Frequency Anlaysis
+Element Exists 'DIV  dvCustomSearchPopup' True
+OK: Find DIV  dvCustomSearchPopup: OP Standard - Frequency Anlaysis
+OK: Click BUTTON  btnViewReport : OP Standard - Frequency Anlaysis
+OK: Click to activate report view window for hotkey: OP Standard - Frequency Anlaysis
+OK: Send hotkey: pgdn for  OP Standard - Frequency Anlaysis
+OK: Report generated: OP Standard - Frequency Anlaysis
+OK: Report generated, screenshot taken:  OP Standard - Frequency Anlaysis
+OK: Close window and go on for the next report: OP Standard - Frequency Anlaysis
+OK: Finished one loop for this report: OP Standard - Frequency Anlaysis

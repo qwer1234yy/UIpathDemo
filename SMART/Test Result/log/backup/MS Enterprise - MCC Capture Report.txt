@@ -1,0 +1,12 @@
+OK: Start to run for : MS Enterprise - MCC Capture Report
+OK: Double Click the First Report Name below: MS Enterprise - MCC Capture Report
+Element Exists 'DIV  dvCustomSearchPopup: False
+OK: Report generated, screenshot taken:  MS Enterprise - MCC Capture Report
+OK: come back to report structure page from   HTML5 pageMS Enterprise - MCC Capture Report
+OK: Finished one loop for this report: MS Enterprise - MCC Capture Report
+OK: Start to run for : MS Enterprise - MCC Capture Report
+OK: Double Click the First Report Name below: MS Enterprise - MCC Capture Report
+Element Exists 'DIV  dvCustomSearchPopup: False
+OK: Report generated, screenshot taken:  MS Enterprise - MCC Capture Report
+OK: come back to report structure page from   HTML5 pageMS Enterprise - MCC Capture Report
+OK: Finished one loop for this report: MS Enterprise - MCC Capture Report

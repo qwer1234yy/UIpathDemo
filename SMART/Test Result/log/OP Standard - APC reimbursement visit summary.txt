@@ -1,0 +1,12 @@
+OK: Start to run for : OP Standard - APC reimbursement visit summary
+OK: Click to expand report: OP Standard - APC reimbursement visit summary
+OK: Double Click the First Report Name below: OP Standard - APC reimbursement visit summary
+Element Exists 'DIV  dvCustomSearchPopup' True
+OK: Find DIV  dvCustomSearchPopup: OP Standard - APC reimbursement visit summary
+OK: Click BUTTON  btnViewReport : OP Standard - APC reimbursement visit summary
+OK: Click to activate report view window for hotkey: OP Standard - APC reimbursement visit summary
+OK: Send hotkey: pgdn for  OP Standard - APC reimbursement visit summary
+OK: Report generated: OP Standard - APC reimbursement visit summary
+OK: Report generated, screenshot taken:  OP Standard - APC reimbursement visit summary
+OK: Close window and go on for the next report: OP Standard - APC reimbursement visit summary
+OK: Finished one loop for this report: OP Standard - APC reimbursement visit summary

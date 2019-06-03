@@ -1,0 +1,5 @@
+OK: Start to run for : MS Enterprise - Medicare short-stay comparison to MedPAR
+OK: Double Click the First Report Name below: MS Enterprise - Medicare short-stay comparison to MedPAR
+Element Exists 'DIV  dvCustomSearchPopup: False
+OOps: Exceptional screenshot taken for MS Enterprise - Medicare short-stay comparison to MedPAR
+OK: Finished one loop for this report: MS Enterprise - Medicare short-stay comparison to MedPAR

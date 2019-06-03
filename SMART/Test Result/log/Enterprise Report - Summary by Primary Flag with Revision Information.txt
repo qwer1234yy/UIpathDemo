@@ -1,0 +1,5 @@
+OK: Start to run for : Enterprise Report - Summary by Primary Flag with Revision Information
+OK: Double Click the First Report Name below: Enterprise Report - Summary by Primary Flag with Revision Information
+Element Exists 'DIV  dvCustomSearchPopup: True
+OOps: Exceptional screenshot taken for Enterprise Report - Summary by Primary Flag with Revision Information
+OK: Finished one loop for this report: Enterprise Report - Summary by Primary Flag with Revision Information

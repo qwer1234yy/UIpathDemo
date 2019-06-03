@@ -1,0 +1,11 @@
+OK: Start to run for : IP Standard - Coding-DRG Review Summary
+OK: Click to expand report: IP Standard - Coding-DRG Review Summary
+OK: Double Click the First Report Name below: IP Standard - Coding-DRG Review Summary
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Coding-DRG Review Summary
+OK: Click BUTTON  btnViewReport : IP Standard - Coding-DRG Review Summary
+OK: Click to activate report view window for hotkey: IP Standard - Coding-DRG Review Summary
+OK: Send hotkey: pgdn for  IP Standard - Coding-DRG Review Summary
+OK: Report generated: IP Standard - Coding-DRG Review Summary
+OK: Report generated, screenshot taken:  IP Standard - Coding-DRG Review Summary
+OK: Close window and go on for the next report: IP Standard - Coding-DRG Review Summary
+OK: Finished one loop for this report: IP Standard - Coding-DRG Review Summary

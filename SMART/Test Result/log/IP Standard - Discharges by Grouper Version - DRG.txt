@@ -1,0 +1,11 @@
+OK: Start to run for : IP Standard - Discharges by Grouper Version - DRG
+OK: Click to expand report: IP Standard - Discharges by Grouper Version - DRG
+OK: Double Click the First Report Name below: IP Standard - Discharges by Grouper Version - DRG
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Discharges by Grouper Version - DRG
+OK: Click BUTTON  btnViewReport : IP Standard - Discharges by Grouper Version - DRG
+OK: Click to activate report view window for hotkey: IP Standard - Discharges by Grouper Version - DRG
+OK: Send hotkey: pgdn for  IP Standard - Discharges by Grouper Version - DRG
+OK: Report generated: IP Standard - Discharges by Grouper Version - DRG
+OK: Report generated, screenshot taken:  IP Standard - Discharges by Grouper Version - DRG
+OK: Close window and go on for the next report: IP Standard - Discharges by Grouper Version - DRG
+OK: Finished one loop for this report: IP Standard - Discharges by Grouper Version - DRG

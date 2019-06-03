@@ -1,0 +1,11 @@
+OK: Start to run for : MS Enterprise - Summary by Primary Flag with Revision Information
+OK: Double Click the First Report Name below: MS Enterprise - Summary by Primary Flag with Revision Information
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: MS Enterprise - Summary by Primary Flag with Revision Information
+OK: Click BUTTON  btnViewReport : MS Enterprise - Summary by Primary Flag with Revision Information
+OK: Click to activate report view window for hotkey: MS Enterprise - Summary by Primary Flag with Revision Information
+OK: Send hotkey: pgdn for  MS Enterprise - Summary by Primary Flag with Revision Information
+OK: Report generated: MS Enterprise - Summary by Primary Flag with Revision Information
+OK: Report generated, screenshot taken:  MS Enterprise - Summary by Primary Flag with Revision Information
+OK: Close window and go on for the next report: MS Enterprise - Summary by Primary Flag with Revision Information
+OK: Finished one loop for this report: MS Enterprise - Summary by Primary Flag with Revision Information

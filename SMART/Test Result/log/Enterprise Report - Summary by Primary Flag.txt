@@ -1,0 +1,11 @@
+OK: Start to run for : Enterprise Report - Summary by Primary Flag
+OK: Double Click the First Report Name below: Enterprise Report - Summary by Primary Flag
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: Enterprise Report - Summary by Primary Flag
+OK: Click BUTTON  btnViewReport : Enterprise Report - Summary by Primary Flag
+OK: Click to activate report view window for hotkey: Enterprise Report - Summary by Primary Flag
+OK: Send hotkey: pgdn for  Enterprise Report - Summary by Primary Flag
+OK: Report generated: Enterprise Report - Summary by Primary Flag
+OK: Report generated, screenshot taken:  Enterprise Report - Summary by Primary Flag
+OK: Close window and go on for the next report: Enterprise Report - Summary by Primary Flag
+OK: Finished one loop for this report: Enterprise Report - Summary by Primary Flag

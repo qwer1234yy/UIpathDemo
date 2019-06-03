@@ -1,0 +1,11 @@
+OK: Start to run for : MS Enterprise - Coding-DRG Accuracy Analysis
+OK: Double Click the First Report Name below: MS Enterprise - Coding-DRG Accuracy Analysis
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: MS Enterprise - Coding-DRG Accuracy Analysis
+OK: Click BUTTON  btnViewReport : MS Enterprise - Coding-DRG Accuracy Analysis
+OK: Click to activate report view window for hotkey: MS Enterprise - Coding-DRG Accuracy Analysis
+OK: Send hotkey: pgdn for  MS Enterprise - Coding-DRG Accuracy Analysis
+OK: Report generated: MS Enterprise - Coding-DRG Accuracy Analysis
+OK: Report generated, screenshot taken:  MS Enterprise - Coding-DRG Accuracy Analysis
+OK: Close window and go on for the next report: MS Enterprise - Coding-DRG Accuracy Analysis
+OK: Finished one loop for this report: MS Enterprise - Coding-DRG Accuracy Analysis

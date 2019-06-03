@@ -1,0 +1,7 @@
+OK: Start to run for : IP Standard - Average Length of Stay by Payer by Month
+OK: Click to expand report: IP Standard - Average Length of Stay by Payer by Month
+OK: Double Click the First Report Name below: IP Standard - Average Length of Stay by Payer by Month
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Average Length of Stay by Payer by Month
+OK: Click BUTTON  btnViewReport : IP Standard - Average Length of Stay by Payer by Month
+OOps: Exceptional screenshot taken for IP Standard - Average Length of Stay by Payer by Month
+OK: Finished one loop for this report: IP Standard - Average Length of Stay by Payer by Month

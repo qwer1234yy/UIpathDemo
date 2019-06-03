@@ -1,0 +1,11 @@
+OK: Start to run for : MS Enterprise - DRG Frequency
+OK: Double Click the First Report Name below: MS Enterprise - DRG Frequency
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: MS Enterprise - DRG Frequency
+OK: Click BUTTON  btnViewReport : MS Enterprise - DRG Frequency
+OK: Click to activate report view window for hotkey: MS Enterprise - DRG Frequency
+OK: Send hotkey: pgdn for  MS Enterprise - DRG Frequency
+OK: Report generated: MS Enterprise - DRG Frequency
+OK: Report generated, screenshot taken:  MS Enterprise - DRG Frequency
+OK: Close window and go on for the next report: MS Enterprise - DRG Frequency
+OK: Finished one loop for this report: MS Enterprise - DRG Frequency

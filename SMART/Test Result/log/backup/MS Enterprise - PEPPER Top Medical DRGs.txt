@@ -1,0 +1,6 @@
+OK: Start to run for : MS Enterprise - PEPPER Top Medical DRGs
+OK: Double Click the First Report Name below: MS Enterprise - PEPPER Top Medical DRGs
+Element Exists 'DIV  dvCustomSearchPopup: False
+OK: Report generated, screenshot taken:  MS Enterprise - PEPPER Top Medical DRGs
+OK: come back to report structure page from   HTML5 pageMS Enterprise - PEPPER Top Medical DRGs
+OK: Finished one loop for this report: MS Enterprise - PEPPER Top Medical DRGs

@@ -1,0 +1,30 @@
+OK: Start to run for : IP Standard - Reimbursement Change Summary
+OK: Click to expand report: IP Standard - Reimbursement Change Summary
+OK: Double Click the First Report Name below: IP Standard - Reimbursement Change Summary
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Reimbursement Change Summary
+OK: Click BUTTON  btnViewReport : IP Standard - Reimbursement Change Summary
+OK: Click to activate report view window for hotkey: IP Standard - Reimbursement Change Summary
+OK: Send hotkey: pgdn for  IP Standard - Reimbursement Change Summary
+OK: Report generated: IP Standard - Reimbursement Change Summary
+OK: Report generated, screenshot taken:  IP Standard - Reimbursement Change Summary
+OK: Close window and go on for the next report: IP Standard - Reimbursement Change Summary
+OK: Start to run for : IP Standard - Reimbursement Change Summary
+OK: Click to expand report: IP Standard - Reimbursement Change Summary
+OK: Double Click the First Report Name below: IP Standard - Reimbursement Change Summary
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Reimbursement Change Summary
+OK: Click BUTTON  btnViewReport : IP Standard - Reimbursement Change Summary
+OK: Click to activate report view window for hotkey: IP Standard - Reimbursement Change Summary
+OK: Send hotkey: pgdn for  IP Standard - Reimbursement Change Summary
+OK: Report generated: IP Standard - Reimbursement Change Summary
+OK: Report generated, screenshot taken:  IP Standard - Reimbursement Change Summary
+OK: Close window and go on for the next report: IP Standard - Reimbursement Change Summary
+OK: Start to run for : IP Standard - Reimbursement Change Summary
+OK: Click to expand report: IP Standard - Reimbursement Change Summary
+OK: Double Click the First Report Name below: IP Standard - Reimbursement Change Summary
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Reimbursement Change Summary
+OK: Click BUTTON  btnViewReport : IP Standard - Reimbursement Change Summary
+OK: Click to activate report view window for hotkey: IP Standard - Reimbursement Change Summary
+OK: Send hotkey: pgdn for  IP Standard - Reimbursement Change Summary
+OK: Report generated: IP Standard - Reimbursement Change Summary
+OK: Report generated, screenshot taken:  IP Standard - Reimbursement Change Summary
+OK: Close window and go on for the next report: IP Standard - Reimbursement Change Summary

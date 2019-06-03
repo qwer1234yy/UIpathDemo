@@ -1,0 +1,10 @@
+OK: Start to run for : IP Standard - SMART Case Review Results
+OK: Click to expand report: IP Standard - SMART Case Review Results
+OK: Double Click the First Report Name below: IP Standard - SMART Case Review Results
+OK: Find DIV  dvCustomSearchPopup: IP Standard - SMART Case Review Results
+OK: Click BUTTON  btnViewReport : IP Standard - SMART Case Review Results
+OK: Click to activate report view window for hotkey: IP Standard - SMART Case Review Results
+OK: Send hotkey: pgdn for  IP Standard - SMART Case Review Results
+OK: Report generated: IP Standard - SMART Case Review Results
+OK: Report generated, screenshot taken:  IP Standard - SMART Case Review Results
+OK: Close window and go on for the next report: IP Standard - SMART Case Review Results

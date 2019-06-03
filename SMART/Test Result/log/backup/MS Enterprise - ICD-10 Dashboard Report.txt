@@ -1,0 +1,5 @@
+OK: Start to run for : MS Enterprise - ICD-10 Dashboard Report
+OK: Double Click the First Report Name below: MS Enterprise - ICD-10 Dashboard Report
+Element Exists 'DIV  dvCustomSearchPopup: False
+OOps: Exceptional screenshot taken for MS Enterprise - ICD-10 Dashboard Report
+OK: Finished one loop for this report: MS Enterprise - ICD-10 Dashboard Report

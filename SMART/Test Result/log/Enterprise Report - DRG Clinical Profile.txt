@@ -1,0 +1,11 @@
+OK: Start to run for : Enterprise Report - DRG Clinical Profile
+OK: Double Click the First Report Name below: Enterprise Report - DRG Clinical Profile
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: Enterprise Report - DRG Clinical Profile
+OK: Click BUTTON  btnViewReport : Enterprise Report - DRG Clinical Profile
+OK: Click to activate report view window for hotkey: Enterprise Report - DRG Clinical Profile
+OK: Send hotkey: pgdn for  Enterprise Report - DRG Clinical Profile
+OK: Report generated: Enterprise Report - DRG Clinical Profile
+OK: Report generated, screenshot taken:  Enterprise Report - DRG Clinical Profile
+OK: Close window and go on for the next report: Enterprise Report - DRG Clinical Profile
+OK: Finished one loop for this report: Enterprise Report - DRG Clinical Profile

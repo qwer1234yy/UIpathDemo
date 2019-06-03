@@ -1,0 +1,11 @@
+OK: Start to run for : IP Standard - Coder Information
+OK: Click to expand report: IP Standard - Coder Information
+OK: Double Click the First Report Name below: IP Standard - Coder Information
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Coder Information
+OK: Click BUTTON  btnViewReport : IP Standard - Coder Information
+OK: Click to activate report view window for hotkey: IP Standard - Coder Information
+OK: Send hotkey: pgdn for  IP Standard - Coder Information
+OK: Report generated: IP Standard - Coder Information
+OK: Report generated, screenshot taken:  IP Standard - Coder Information
+OK: Close window and go on for the next report: IP Standard - Coder Information
+OK: Finished one loop for this report: IP Standard - Coder Information

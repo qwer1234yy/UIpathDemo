@@ -1,0 +1,7 @@
+OK: Start to run for : Enterprise Report - ICD-10 Unspecified Codes Report
+OK: Double Click the First Report Name below: Enterprise Report - ICD-10 Unspecified Codes Report
+Element Exists 'DIV  dvCustomSearchPopup: False
+OK: begin to wait for Footer display
+OK: Report generated, screenshot taken:  Enterprise Report - ICD-10 Unspecified Codes Report
+OK: come back to report structure page from   HTML5 pageEnterprise Report - ICD-10 Unspecified Codes Report
+OK: Finished one loop for this report: Enterprise Report - ICD-10 Unspecified Codes Report

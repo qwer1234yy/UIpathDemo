@@ -1,0 +1,7 @@
+OK: Start to run for : IP Standard - Inpatient Flag Information
+OK: Click to expand report: IP Standard - Inpatient Flag Information
+OK: Double Click the First Report Name below: IP Standard - Inpatient Flag Information
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Inpatient Flag Information
+OK: Click BUTTON  btnViewReport : IP Standard - Inpatient Flag Information
+OOps: Exceptional screenshot taken for IP Standard - Inpatient Flag Information
+OK: Finished one loop for this report: IP Standard - Inpatient Flag Information

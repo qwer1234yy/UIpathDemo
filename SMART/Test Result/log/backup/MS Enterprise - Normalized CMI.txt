@@ -1,0 +1,6 @@
+OK: Start to run for : MS Enterprise - Normalized CMI
+OK: Double Click the First Report Name below: MS Enterprise - Normalized CMI
+Element Exists 'DIV  dvCustomSearchPopup: False
+OK: Report generated, screenshot taken:  MS Enterprise - Normalized CMI
+OK: come back to report structure page from   HTML5 pageMS Enterprise - Normalized CMI
+OK: Finished one loop for this report: MS Enterprise - Normalized CMI

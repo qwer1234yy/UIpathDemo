@@ -1,0 +1,11 @@
+OK: Start to run for : MS Enterprise - CMI Reimbursement Summary
+OK: Double Click the First Report Name below: MS Enterprise - CMI Reimbursement Summary
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: MS Enterprise - CMI Reimbursement Summary
+OK: Click BUTTON  btnViewReport : MS Enterprise - CMI Reimbursement Summary
+OK: Click to activate report view window for hotkey: MS Enterprise - CMI Reimbursement Summary
+OK: Send hotkey: pgdn for  MS Enterprise - CMI Reimbursement Summary
+OK: Report generated: MS Enterprise - CMI Reimbursement Summary
+OK: Report generated, screenshot taken:  MS Enterprise - CMI Reimbursement Summary
+OK: Close window and go on for the next report: MS Enterprise - CMI Reimbursement Summary
+OK: Finished one loop for this report: MS Enterprise - CMI Reimbursement Summary

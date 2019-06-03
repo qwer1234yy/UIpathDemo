@@ -1,0 +1,6 @@
+OK: Start to run for : Enterprise Report - Inpatient Coding Accuracy and Results
+OK: Double Click the First Report Name below: Enterprise Report - Inpatient Coding Accuracy and Results
+Element Exists 'DIV  dvCustomSearchPopup: False
+OK: begin to wait for Footer display
+OOps: Exceptional screenshot taken for Enterprise Report - Inpatient Coding Accuracy and Results
+OK: Finished one loop for this report: Enterprise Report - Inpatient Coding Accuracy and Results

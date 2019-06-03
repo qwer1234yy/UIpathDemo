@@ -1,0 +1,11 @@
+OK: Start to run for : MS Enterprise - Data Comparison
+OK: Double Click the First Report Name below: MS Enterprise - Data Comparison
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: MS Enterprise - Data Comparison
+OK: Click BUTTON  btnViewReport : MS Enterprise - Data Comparison
+OK: Click to activate report view window for hotkey: MS Enterprise - Data Comparison
+OK: Send hotkey: pgdn for  MS Enterprise - Data Comparison
+OK: Report generated: MS Enterprise - Data Comparison
+OK: Report generated, screenshot taken:  MS Enterprise - Data Comparison
+OK: Close window and go on for the next report: MS Enterprise - Data Comparison
+OK: Finished one loop for this report: MS Enterprise - Data Comparison

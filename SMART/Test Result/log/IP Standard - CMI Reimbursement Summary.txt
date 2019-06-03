@@ -1,0 +1,10 @@
+OK: Start to run for : IP Standard - CMI Reimbursement Summary
+OK: Click to expand report: IP Standard - CMI Reimbursement Summary
+OK: Double Click the First Report Name below: IP Standard - CMI Reimbursement Summary
+OK: Find DIV  dvCustomSearchPopup: IP Standard - CMI Reimbursement Summary
+OK: Click BUTTON  btnViewReport : IP Standard - CMI Reimbursement Summary
+OK: Click to activate report view window for hotkey: IP Standard - CMI Reimbursement Summary
+OK: Send hotkey: pgdn for  IP Standard - CMI Reimbursement Summary
+OK: Report generated: IP Standard - CMI Reimbursement Summary
+OK: Report generated, screenshot taken:  IP Standard - CMI Reimbursement Summary
+OK: Close window and go on for the next report: IP Standard - CMI Reimbursement Summary

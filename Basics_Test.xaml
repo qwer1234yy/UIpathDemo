@@ -7,6 +7,8 @@
  xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
  xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
  xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing"
+ xmlns:uga="clr-namespace:UiPathTeam.Gmail.Activities;assembly=UiPathTeam.Gmail.Activities"
  xmlns:ui="http://schemas.uipath.com/workflow/activities"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
@@ -32,6 +34,7 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Xml.Serialization</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -73,23 +76,46 @@
       <Variable x:TypeArguments="x:Boolean" Name="result" />
       <Variable x:TypeArguments="x:String" Default="C:\1-Jon\study\uipath" Name="package_saved_location" />
       <Variable x:TypeArguments="ui:UiElement" Name="TextRigin" />
+      <Variable x:TypeArguments="x:String" Name="pdf1" />
+      <Variable x:TypeArguments="scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))" Name="ocr1" />
+      <Variable x:TypeArguments="x:String" Name="ocr2" />
     </Sequence.Variables>
-    <Delay Duration="00:00:05" sap2010:WorkflowViewState.IdRef="Delay_1" />
-    <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;test&quot;]" />
-    <sads:DebugSymbol.Symbol>dz9DOlxVc2Vyc1x5eWFuZzIxMlxEb2N1bWVudHNcVWlQYXRoXFVJUGF0aF9kZW1vXEJhc2ljc19UZXN0LnhhbWwIQQNQDgIBAUY0RkYCAQRHNUc7AgEDSjRKSwIBAk0FTUwCAQdOBU6JAQIBBU0VTR8CAQhOck6GAQIBBg==</sads:DebugSymbol.Symbol>
+    <uga:GoogleAuthenticationScope CertificatePassword="{x:Null}" CertificatePath="{x:Null}" ClientSecret="{x:Null}" Timeout="{x:Null}" ClientID="PWC" DisplayName="Gmail Scope" EmailAddress="yang.y.yang@pwc.com" sap2010:WorkflowViewState.IdRef="GoogleAuthenticationScope_1">
+      <uga:GoogleAuthenticationScope.Body>
+        <ActivityAction x:TypeArguments="uga:GoogleAuthenticationProperty, x:String">
+          <ActivityAction.Argument1>
+            <DelegateInArgument x:TypeArguments="uga:GoogleAuthenticationProperty" Name="GoogleScope" />
+          </ActivityAction.Argument1>
+          <ActivityAction.Argument2>
+            <DelegateInArgument x:TypeArguments="x:String" Name="EmailAddress" />
+          </ActivityAction.Argument2>
+          <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <uga:CreateLabelActivity ContinueOnError="{x:Null}" Timeout="{x:Null}" DisplayName="Create Label" LabelName="Test" sap2010:WorkflowViewState.IdRef="CreateLabelActivity_1" />
+          </Sequence>
+        </ActivityAction>
+      </uga:GoogleAuthenticationScope.Body>
+    </uga:GoogleAuthenticationScope>
+    <sads:DebugSymbol.Symbol>dz9DOlxVc2Vyc1x5eWFuZzIxMlxEb2N1bWVudHNcVWlQYXRoXFVJUGF0aF9kZW1vXEJhc2ljc19UZXN0LnhhbWwKRANjDgIBAUk0SUYCAQRKNUo7AgEDTTRNSwIBAlMFYSUCAQVTkgFTlwECAQpTvwFT1AECAQlcC14WAgEGXQ1dugECAQddeV1/AgEI</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
-      <sap2010:ViewStateData Id="Delay_1" sap:VirtualizedContainerService.HintSize="314,22" />
-      <sap2010:ViewStateData Id="LogMessage_1" sap:VirtualizedContainerService.HintSize="314,91" />
-      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="336,277">
+      <sap2010:ViewStateData Id="CreateLabelActivity_1" sap:VirtualizedContainerService.HintSize="200,70" />
+      <sap2010:ViewStateData Id="Sequence_3" sap:VirtualizedContainerService.HintSize="222,194">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="ActivityBuilder_1" sap:VirtualizedContainerService.HintSize="376,357" />
+      <sap2010:ViewStateData Id="GoogleAuthenticationScope_1" sap:VirtualizedContainerService.HintSize="314,280" />
+      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="336,404">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="ActivityBuilder_1" sap:VirtualizedContainerService.HintSize="376,484" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>

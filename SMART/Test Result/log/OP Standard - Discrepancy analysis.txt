@@ -1,0 +1,12 @@
+OK: Start to run for : OP Standard - Discrepancy analysis
+OK: Click to expand report: OP Standard - Discrepancy analysis
+OK: Double Click the First Report Name below: OP Standard - Discrepancy analysis
+Element Exists 'DIV  dvCustomSearchPopup' True
+OK: Find DIV  dvCustomSearchPopup: OP Standard - Discrepancy analysis
+OK: Click BUTTON  btnViewReport : OP Standard - Discrepancy analysis
+OK: Click to activate report view window for hotkey: OP Standard - Discrepancy analysis
+OK: Send hotkey: pgdn for  OP Standard - Discrepancy analysis
+OK: Report generated: OP Standard - Discrepancy analysis
+OK: Report generated, screenshot taken:  OP Standard - Discrepancy analysis
+OK: Close window and go on for the next report: OP Standard - Discrepancy analysis
+OK: Finished one loop for this report: OP Standard - Discrepancy analysis

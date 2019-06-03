@@ -1,0 +1,11 @@
+OK: Start to run for : Enterprise Report - DRG Frequency
+OK: Double Click the First Report Name below: Enterprise Report - DRG Frequency
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: Enterprise Report - DRG Frequency
+OK: Click BUTTON  btnViewReport : Enterprise Report - DRG Frequency
+OK: Click to activate report view window for hotkey: Enterprise Report - DRG Frequency
+OK: Send hotkey: pgdn for  Enterprise Report - DRG Frequency
+OK: Report generated: Enterprise Report - DRG Frequency
+OK: Report generated, screenshot taken:  Enterprise Report - DRG Frequency
+OK: Close window and go on for the next report: Enterprise Report - DRG Frequency
+OK: Finished one loop for this report: Enterprise Report - DRG Frequency

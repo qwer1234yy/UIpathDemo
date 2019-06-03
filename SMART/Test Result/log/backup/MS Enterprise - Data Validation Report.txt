@@ -1,0 +1,100 @@
+OK: Start to run for : MS Enterprise - Data Validation Report
+OK: Double Click the First Report Name below: MS Enterprise - Data Validation Report
+Element Exists 'DIV  dvCustomSearchPopup: False
+OOps: Exceptional screenshot taken for MS Enterprise - Data Validation Report
+OK: Finished one loop for this report: MS Enterprise - Data Validation Report
+OOps: Exception occurred in a loop: UiPath.Core.SelectorNotFoundException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='txtSearch' tag='INPUT' /> ---> System.Runtime.InteropServices.COMException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='txtSearch' tag='INPUT' />
+   at UiPath.UiNodeClass.FindFirst(UiFindScope scope, String nodeID)
+   at UiPath.Core.UiElement.FindFirst(FindScope scope, Selector selector)
+   --- End of inner exception stack trace ---
+   at UiPath.Core.Activities.TaskAsyncCodeActivity`1.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.System.Activities.IAsyncCodeActivity.FinishExecution(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.CompleteAsyncCodeActivityData.CompleteAsyncCodeActivityWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+OOps: Exceptional screenshot taken
+OK: Finished one loop for this report: MS Enterprise - Data Validation Report
+OOps: Exception occurred in a loop: UiPath.Core.SelectorNotFoundException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='txtSearch' tag='INPUT' /> ---> System.Runtime.InteropServices.COMException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='txtSearch' tag='INPUT' />
+   at UiPath.UiNodeClass.FindFirst(UiFindScope scope, String nodeID)
+   at UiPath.Core.UiElement.FindFirst(FindScope scope, Selector selector)
+   --- End of inner exception stack trace ---
+   at UiPath.Core.Activities.TaskAsyncCodeActivity`1.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.System.Activities.IAsyncCodeActivity.FinishExecution(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.CompleteAsyncCodeActivityData.CompleteAsyncCodeActivityWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+OOps: Exceptional screenshot taken
+OK: Finished one loop for this report: MS Enterprise - Data Validation Report
+OOps: Exception occurred in a loop: UiPath.Core.SelectorNotFoundException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='txtSearch' tag='INPUT' /> ---> System.Runtime.InteropServices.COMException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='txtSearch' tag='INPUT' />
+   at UiPath.UiNodeClass.FindFirst(UiFindScope scope, String nodeID)
+   at UiPath.Core.UiElement.FindFirst(FindScope scope, Selector selector)
+   --- End of inner exception stack trace ---
+   at UiPath.Core.Activities.TaskAsyncCodeActivity`1.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.System.Activities.IAsyncCodeActivity.FinishExecution(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.CompleteAsyncCodeActivityData.CompleteAsyncCodeActivityWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+OOps: Exceptional screenshot taken
+OK: Finished one loop for this report: MS Enterprise - Data Validation Report
+OOps: Exception occurred in a loop: UiPath.Core.SelectorNotFoundException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='txtSearch' tag='INPUT' /> ---> System.Runtime.InteropServices.COMException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='txtSearch' tag='INPUT' />
+   at UiPath.UiNodeClass.FindFirst(UiFindScope scope, String nodeID)
+   at UiPath.Core.UiElement.FindFirst(FindScope scope, Selector selector)
+   --- End of inner exception stack trace ---
+   at UiPath.Core.Activities.TaskAsyncCodeActivity`1.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.System.Activities.IAsyncCodeActivity.FinishExecution(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.CompleteAsyncCodeActivityData.CompleteAsyncCodeActivityWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+OOps: Exceptional screenshot taken
+OK: Finished one loop for this report: MS Enterprise - Data Validation Report
+OOps: Exception occurred in a loop: UiPath.Core.SelectorNotFoundException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='txtSearch' tag='INPUT' /> ---> System.Runtime.InteropServices.COMException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='txtSearch' tag='INPUT' />
+   at UiPath.UiNodeClass.FindFirst(UiFindScope scope, String nodeID)
+   at UiPath.Core.UiElement.FindFirst(FindScope scope, Selector selector)
+   --- End of inner exception stack trace ---
+   at UiPath.Core.Activities.TaskAsyncCodeActivity`1.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.System.Activities.IAsyncCodeActivity.FinishExecution(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.CompleteAsyncCodeActivityData.CompleteAsyncCodeActivityWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+OOps: Exceptional screenshot taken
+OK: Finished one loop for this report: MS Enterprise - Data Validation Report
+OOps: Exception occurred in a loop: UiPath.Core.SelectorNotFoundException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='txtSearch' tag='INPUT' /> ---> System.Runtime.InteropServices.COMException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='txtSearch' tag='INPUT' />
+   at UiPath.UiNodeClass.FindFirst(UiFindScope scope, String nodeID)
+   at UiPath.Core.UiElement.FindFirst(FindScope scope, Selector selector)
+   --- End of inner exception stack trace ---
+   at UiPath.Core.Activities.TaskAsyncCodeActivity`1.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.System.Activities.IAsyncCodeActivity.FinishExecution(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.CompleteAsyncCodeActivityData.CompleteAsyncCodeActivityWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+OOps: Exceptional screenshot taken
+OK: Finished one loop for this report: MS Enterprise - Data Validation Report
+OOps: Exception occurred in a loop: UiPath.Core.SelectorNotFoundException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='txtSearch' tag='INPUT' /> ---> System.Runtime.InteropServices.COMException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='txtSearch' tag='INPUT' />
+   at UiPath.UiNodeClass.FindFirst(UiFindScope scope, String nodeID)
+   at UiPath.Core.UiElement.FindFirst(FindScope scope, Selector selector)
+   --- End of inner exception stack trace ---
+   at UiPath.Core.Activities.TaskAsyncCodeActivity`1.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.System.Activities.IAsyncCodeActivity.FinishExecution(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.CompleteAsyncCodeActivityData.CompleteAsyncCodeActivityWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+OOps: Exceptional screenshot taken
+OK: Finished one loop for this report: MS Enterprise - Data Validation Report
+OK: Finished one loop for this report: MS Enterprise - Data Validation Report
+OK: Start to run for : MS Enterprise - Data Validation Report
+OK: Double Click the First Report Name below: MS Enterprise - Data Validation Report
+Element Exists 'DIV  dvCustomSearchPopup: False
+OOps: Exceptional screenshot taken for MS Enterprise - Data Validation Report
+OOps: Exception occurred in a loop: UiPath.Core.SelectorNotFoundException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' htmlwindowname='Report' /> ---> System.Runtime.InteropServices.COMException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' htmlwindowname='Report' />
+   at UiPath.UiNodeClass.FindFirst(UiFindScope scope, String nodeID)
+   at UiPath.Core.UiElement.FindFirst(FindScope scope, Selector selector)
+   --- End of inner exception stack trace ---
+   at UiPath.Core.Activities.TaskAsyncCodeActivity`1.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.System.Activities.IAsyncCodeActivity.FinishExecution(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.CompleteAsyncCodeActivityData.CompleteAsyncCodeActivityWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+OOps: Exceptional screenshot taken
+OK: Finished one loop for this report: MS Enterprise - Data Validation Report
+OOps: Exception occurred in a loop: UiPath.Core.SelectorNotFoundException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='txtSearch' tag='INPUT' /> ---> System.Runtime.InteropServices.COMException: Cannot find the UI element corresponding to this selector: <html app='firefox.exe' title='Management Suite - Report Glossary' /><webctrl id='txtSearch' tag='INPUT' />
+   at UiPath.UiNodeClass.FindFirst(UiFindScope scope, String nodeID)
+   at UiPath.Core.UiElement.FindFirst(FindScope scope, Selector selector)
+   --- End of inner exception stack trace ---
+   at UiPath.Core.Activities.TaskAsyncCodeActivity`1.EndExecute(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.System.Activities.IAsyncCodeActivity.FinishExecution(AsyncCodeActivityContext context, IAsyncResult result)
+   at System.Activities.AsyncCodeActivity.CompleteAsyncCodeActivityData.CompleteAsyncCodeActivityWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+OOps: Exceptional screenshot taken
+OK: Finished one loop for this report: MS Enterprise - Data Validation Report
+OK: Finished one loop for this report: MS Enterprise - Data Validation Report
+OK: Start to run for : MS Enterprise - Data Validation Report
+OK: Double Click the First Report Name below: MS Enterprise - Data Validation Report
+Element Exists 'DIV  dvCustomSearchPopup: False
+OK: Start to run for : MS Enterprise - Data Validation Report
+OK: Double Click the First Report Name below: MS Enterprise - Data Validation Report
+Element Exists 'DIV  dvCustomSearchPopup: False
+OOps: Exceptional screenshot taken for MS Enterprise - Data Validation Report
+OK: Finished one loop for this report: MS Enterprise - Data Validation Report

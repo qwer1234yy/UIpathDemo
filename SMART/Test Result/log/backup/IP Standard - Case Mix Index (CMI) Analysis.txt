@@ -1,0 +1,10 @@
+OK: Start to run for : IP Standard - Case Mix Index (CMI) Analysis
+OK: Click to expand report: IP Standard - Case Mix Index (CMI) Analysis
+OK: Double Click the First Report Name below: IP Standard - Case Mix Index (CMI) Analysis
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Case Mix Index (CMI) Analysis
+OK: Click BUTTON  btnViewReport : IP Standard - Case Mix Index (CMI) Analysis
+OK: Click to activate report view window for hotkey: IP Standard - Case Mix Index (CMI) Analysis
+OK: Send hotkey: pgdn for  IP Standard - Case Mix Index (CMI) Analysis
+OK: Report generated: IP Standard - Case Mix Index (CMI) Analysis
+OK: Report generated, screenshot taken:  IP Standard - Case Mix Index (CMI) Analysis
+OK: Close window and go on for the next report: IP Standard - Case Mix Index (CMI) Analysis

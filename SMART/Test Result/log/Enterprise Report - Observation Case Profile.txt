@@ -1,0 +1,6 @@
+OK: Start to run for : Enterprise Report - Observation Case Profile
+OK: Double Click the First Report Name below: Enterprise Report - Observation Case Profile
+Element Exists 'DIV  dvCustomSearchPopup: False
+OK: begin to wait for Footer display
+OOps: Exceptional screenshot taken for Enterprise Report - Observation Case Profile
+OK: Finished one loop for this report: Enterprise Report - Observation Case Profile

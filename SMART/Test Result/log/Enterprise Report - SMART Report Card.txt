@@ -1,0 +1,11 @@
+OK: Start to run for : Enterprise Report - SMART Report Card
+OK: Double Click the First Report Name below: Enterprise Report - SMART Report Card
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: Enterprise Report - SMART Report Card
+OK: Click BUTTON  btnViewReport : Enterprise Report - SMART Report Card
+OK: Click to activate report view window for hotkey: Enterprise Report - SMART Report Card
+OK: Send hotkey: pgdn for  Enterprise Report - SMART Report Card
+OK: Report generated: Enterprise Report - SMART Report Card
+OK: Report generated, screenshot taken:  Enterprise Report - SMART Report Card
+OK: Close window and go on for the next report: Enterprise Report - SMART Report Card
+OK: Finished one loop for this report: Enterprise Report - SMART Report Card

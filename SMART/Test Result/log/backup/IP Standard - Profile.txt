@@ -1,0 +1,10 @@
+OK: Start to run for : IP Standard - Profile
+OK: Click to expand report: IP Standard - Profile
+OK: Double Click the First Report Name below: IP Standard - Profile
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Profile
+OK: Click BUTTON  btnViewReport : IP Standard - Profile
+OK: Click to activate report view window for hotkey: IP Standard - Profile
+OK: Send hotkey: pgdn for  IP Standard - Profile
+OK: Report generated: IP Standard - Profile
+OK: Report generated, screenshot taken:  IP Standard - Profile
+OK: Close window and go on for the next report: IP Standard - Profile

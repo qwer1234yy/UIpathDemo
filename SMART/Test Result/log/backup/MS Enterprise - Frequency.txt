@@ -1,0 +1,11 @@
+OK: Start to run for : MS Enterprise - Frequency
+OK: Double Click the First Report Name below: MS Enterprise - Frequency
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: MS Enterprise - Frequency
+OK: Click BUTTON  btnViewReport : MS Enterprise - Frequency
+OK: Click to activate report view window for hotkey: MS Enterprise - Frequency
+OK: Send hotkey: pgdn for  MS Enterprise - Frequency
+OK: Report generated: MS Enterprise - Frequency
+OK: Report generated, screenshot taken:  MS Enterprise - Frequency
+OK: Close window and go on for the next report: MS Enterprise - Frequency
+OK: Finished one loop for this report: MS Enterprise - Frequency

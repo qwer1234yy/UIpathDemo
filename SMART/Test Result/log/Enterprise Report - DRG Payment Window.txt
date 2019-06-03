@@ -1,0 +1,7 @@
+OK: Start to run for : Enterprise Report - DRG Payment Window
+OK: Double Click the First Report Name below: Enterprise Report - DRG Payment Window
+Element Exists 'DIV  dvCustomSearchPopup: False
+OK: begin to wait for Footer display
+OK: Report generated, screenshot taken:  Enterprise Report - DRG Payment Window
+OK: come back to report structure page from   HTML5 pageEnterprise Report - DRG Payment Window
+OK: Finished one loop for this report: Enterprise Report - DRG Payment Window

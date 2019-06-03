@@ -1,0 +1,33 @@
+OK: Start to run for : MS Enterprise - Reimbursement Change Summary
+OK: Double Click the First Report Name below: MS Enterprise - Reimbursement Change Summary
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: MS Enterprise - Reimbursement Change Summary
+OK: Click BUTTON  btnViewReport : MS Enterprise - Reimbursement Change Summary
+OK: Click to activate report view window for hotkey: MS Enterprise - Reimbursement Change Summary
+OK: Send hotkey: pgdn for  MS Enterprise - Reimbursement Change Summary
+OK: Report generated: MS Enterprise - Reimbursement Change Summary
+OK: Report generated, screenshot taken:  MS Enterprise - Reimbursement Change Summary
+OK: Close window and go on for the next report: MS Enterprise - Reimbursement Change Summary
+OK: Finished one loop for this report: MS Enterprise - Reimbursement Change Summary
+OK: Start to run for : MS Enterprise - Reimbursement Change Summary
+OK: Double Click the First Report Name below: MS Enterprise - Reimbursement Change Summary
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: MS Enterprise - Reimbursement Change Summary
+OK: Click BUTTON  btnViewReport : MS Enterprise - Reimbursement Change Summary
+OK: Click to activate report view window for hotkey: MS Enterprise - Reimbursement Change Summary
+OK: Send hotkey: pgdn for  MS Enterprise - Reimbursement Change Summary
+OK: Report generated: MS Enterprise - Reimbursement Change Summary
+OK: Report generated, screenshot taken:  MS Enterprise - Reimbursement Change Summary
+OK: Close window and go on for the next report: MS Enterprise - Reimbursement Change Summary
+OK: Finished one loop for this report: MS Enterprise - Reimbursement Change Summary
+OK: Start to run for : MS Enterprise - Reimbursement Change Summary
+OK: Double Click the First Report Name below: MS Enterprise - Reimbursement Change Summary
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: MS Enterprise - Reimbursement Change Summary
+OK: Click BUTTON  btnViewReport : MS Enterprise - Reimbursement Change Summary
+OK: Click to activate report view window for hotkey: MS Enterprise - Reimbursement Change Summary
+OK: Send hotkey: pgdn for  MS Enterprise - Reimbursement Change Summary
+OK: Report generated: MS Enterprise - Reimbursement Change Summary
+OK: Report generated, screenshot taken:  MS Enterprise - Reimbursement Change Summary
+OK: Close window and go on for the next report: MS Enterprise - Reimbursement Change Summary
+OK: Finished one loop for this report: MS Enterprise - Reimbursement Change Summary

@@ -1,0 +1,12 @@
+OK: Start to run for : OP Standard - Outpatient Flag Information
+OK: Click to expand report: OP Standard - Outpatient Flag Information
+OK: Double Click the First Report Name below: OP Standard - Outpatient Flag Information
+Element Exists 'DIV  dvCustomSearchPopup' True
+OK: Find DIV  dvCustomSearchPopup: OP Standard - Outpatient Flag Information
+OK: Click BUTTON  btnViewReport : OP Standard - Outpatient Flag Information
+OK: Click to activate report view window for hotkey: OP Standard - Outpatient Flag Information
+OK: Send hotkey: pgdn for  OP Standard - Outpatient Flag Information
+OK: Report generated: OP Standard - Outpatient Flag Information
+OK: Report generated, screenshot taken:  OP Standard - Outpatient Flag Information
+OK: Close window and go on for the next report: OP Standard - Outpatient Flag Information
+OK: Finished one loop for this report: OP Standard - Outpatient Flag Information

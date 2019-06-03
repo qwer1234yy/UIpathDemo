@@ -1,0 +1,6 @@
+OK: Start to run for : MS Enterprise - Evaluation & Management Clinical Profile
+OK: Double Click the First Report Name below: MS Enterprise - Evaluation & Management Clinical Profile
+Element Exists 'DIV  dvCustomSearchPopup: False
+OK: Report generated, screenshot taken:  MS Enterprise - Evaluation & Management Clinical Profile
+OK: come back to report structure page from   HTML5 pageMS Enterprise - Evaluation & Management Clinical Profile
+OK: Finished one loop for this report: MS Enterprise - Evaluation & Management Clinical Profile

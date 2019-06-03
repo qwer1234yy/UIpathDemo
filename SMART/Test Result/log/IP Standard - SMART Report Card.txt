@@ -1,0 +1,10 @@
+OK: Start to run for : IP Standard - SMART Report Card
+OK: Click to expand report: IP Standard - SMART Report Card
+OK: Double Click the First Report Name below: IP Standard - SMART Report Card
+OK: Find DIV  dvCustomSearchPopup: IP Standard - SMART Report Card
+OK: Click BUTTON  btnViewReport : IP Standard - SMART Report Card
+OK: Click to activate report view window for hotkey: IP Standard - SMART Report Card
+OK: Send hotkey: pgdn for  IP Standard - SMART Report Card
+OK: Report generated: IP Standard - SMART Report Card
+OK: Report generated, screenshot taken:  IP Standard - SMART Report Card
+OK: Close window and go on for the next report: IP Standard - SMART Report Card

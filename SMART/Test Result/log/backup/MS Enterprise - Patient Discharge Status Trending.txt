@@ -1,0 +1,5 @@
+OK: Start to run for : MS Enterprise - Patient Discharge Status Trending
+OK: Double Click the First Report Name below: MS Enterprise - Patient Discharge Status Trending
+Element Exists 'DIV  dvCustomSearchPopup: False
+OOps: Exceptional screenshot taken for MS Enterprise - Patient Discharge Status Trending
+OK: Finished one loop for this report: MS Enterprise - Patient Discharge Status Trending

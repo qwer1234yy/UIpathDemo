@@ -1,0 +1,11 @@
+OK: Start to run for : Enterprise Report - Diagnosis Analysis by Present on Admission(POA)
+OK: Double Click the First Report Name below: Enterprise Report - Diagnosis Analysis by Present on Admission(POA)
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: Enterprise Report - Diagnosis Analysis by Present on Admission(POA)
+OK: Click BUTTON  btnViewReport : Enterprise Report - Diagnosis Analysis by Present on Admission(POA)
+OK: Click to activate report view window for hotkey: Enterprise Report - Diagnosis Analysis by Present on Admission(POA)
+OK: Send hotkey: pgdn for  Enterprise Report - Diagnosis Analysis by Present on Admission(POA)
+OK: Report generated: Enterprise Report - Diagnosis Analysis by Present on Admission(POA)
+OK: Report generated, screenshot taken:  Enterprise Report - Diagnosis Analysis by Present on Admission(POA)
+OK: Close window and go on for the next report: Enterprise Report - Diagnosis Analysis by Present on Admission(POA)
+OK: Finished one loop for this report: Enterprise Report - Diagnosis Analysis by Present on Admission(POA)

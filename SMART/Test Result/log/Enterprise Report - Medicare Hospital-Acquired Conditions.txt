@@ -1,0 +1,11 @@
+OK: Start to run for : Enterprise Report - Medicare Hospital-Acquired Conditions
+OK: Double Click the First Report Name below: Enterprise Report - Medicare Hospital-Acquired Conditions
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: Enterprise Report - Medicare Hospital-Acquired Conditions
+OK: Click BUTTON  btnViewReport : Enterprise Report - Medicare Hospital-Acquired Conditions
+OK: Click to activate report view window for hotkey: Enterprise Report - Medicare Hospital-Acquired Conditions
+OK: Send hotkey: pgdn for  Enterprise Report - Medicare Hospital-Acquired Conditions
+OK: Report generated: Enterprise Report - Medicare Hospital-Acquired Conditions
+OK: Report generated, screenshot taken:  Enterprise Report - Medicare Hospital-Acquired Conditions
+OK: Close window and go on for the next report: Enterprise Report - Medicare Hospital-Acquired Conditions
+OK: Finished one loop for this report: Enterprise Report - Medicare Hospital-Acquired Conditions

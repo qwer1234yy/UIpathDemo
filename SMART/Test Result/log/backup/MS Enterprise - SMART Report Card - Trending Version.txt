@@ -1,0 +1,6 @@
+OK: Start to run for : MS Enterprise - SMART Report Card - Trending Version
+OK: Double Click the First Report Name below: MS Enterprise - SMART Report Card - Trending Version
+Element Exists 'DIV  dvCustomSearchPopup: False
+OK: Report generated, screenshot taken:  MS Enterprise - SMART Report Card - Trending Version
+OK: come back to report structure page from   HTML5 pageMS Enterprise - SMART Report Card - Trending Version
+OK: Finished one loop for this report: MS Enterprise - SMART Report Card - Trending Version

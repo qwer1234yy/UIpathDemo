@@ -1,0 +1,10 @@
+OK: Start to run for : IP Standard - Frequency
+OK: Click to expand report: IP Standard - Frequency
+OK: Double Click the First Report Name below: IP Standard - Frequency
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Frequency
+OK: Click BUTTON  btnViewReport : IP Standard - Frequency
+OK: Click to activate report view window for hotkey: IP Standard - Frequency
+OK: Send hotkey: pgdn for  IP Standard - Frequency
+OK: Report generated: IP Standard - Frequency
+OK: Report generated, screenshot taken:  IP Standard - Frequency
+OK: Close window and go on for the next report: IP Standard - Frequency

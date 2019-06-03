@@ -1,0 +1,33 @@
+OK: Start to run for : OP Standard - Reimbursement Change Summary
+OK: Click to expand report: OP Standard - Reimbursement Change Summary
+OK: Double Click the First Report Name below: OP Standard - Reimbursement Change Summary
+Element Exists 'DIV  dvCustomSearchPopup' True
+OK: Find DIV  dvCustomSearchPopup: OP Standard - Reimbursement Change Summary
+OK: Click BUTTON  btnViewReport : OP Standard - Reimbursement Change Summary
+OK: Click to activate report view window for hotkey: OP Standard - Reimbursement Change Summary
+OK: Send hotkey: pgdn for  OP Standard - Reimbursement Change Summary
+OK: Report generated: OP Standard - Reimbursement Change Summary
+OK: Report generated, screenshot taken:  OP Standard - Reimbursement Change Summary
+OK: Close window and go on for the next report: OP Standard - Reimbursement Change Summary
+OK: Start to run for : OP Standard - Reimbursement Change Summary
+OK: Click to expand report: OP Standard - Reimbursement Change Summary
+OK: Double Click the First Report Name below: OP Standard - Reimbursement Change Summary
+Element Exists 'DIV  dvCustomSearchPopup' True
+OK: Find DIV  dvCustomSearchPopup: OP Standard - Reimbursement Change Summary
+OK: Click BUTTON  btnViewReport : OP Standard - Reimbursement Change Summary
+OK: Click to activate report view window for hotkey: OP Standard - Reimbursement Change Summary
+OK: Send hotkey: pgdn for  OP Standard - Reimbursement Change Summary
+OK: Report generated: OP Standard - Reimbursement Change Summary
+OK: Report generated, screenshot taken:  OP Standard - Reimbursement Change Summary
+OK: Close window and go on for the next report: OP Standard - Reimbursement Change Summary
+OK: Start to run for : OP Standard - Reimbursement Change Summary
+OK: Click to expand report: OP Standard - Reimbursement Change Summary
+OK: Double Click the First Report Name below: OP Standard - Reimbursement Change Summary
+Element Exists 'DIV  dvCustomSearchPopup' True
+OK: Find DIV  dvCustomSearchPopup: OP Standard - Reimbursement Change Summary
+OK: Click BUTTON  btnViewReport : OP Standard - Reimbursement Change Summary
+OK: Click to activate report view window for hotkey: OP Standard - Reimbursement Change Summary
+OK: Send hotkey: pgdn for  OP Standard - Reimbursement Change Summary
+OK: Report generated: OP Standard - Reimbursement Change Summary
+OK: Report generated, screenshot taken:  OP Standard - Reimbursement Change Summary
+OK: Close window and go on for the next report: OP Standard - Reimbursement Change Summary

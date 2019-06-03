@@ -1,0 +1,7 @@
+OK: Start to run for : IP Standard - Medicare Case-Mix by Month
+OK: Click to expand report: IP Standard - Medicare Case-Mix by Month
+OK: Double Click the First Report Name below: IP Standard - Medicare Case-Mix by Month
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Medicare Case-Mix by Month
+OK: Click BUTTON  btnViewReport : IP Standard - Medicare Case-Mix by Month
+OOps: Exceptional screenshot taken for IP Standard - Medicare Case-Mix by Month
+OK: Finished one loop for this report: IP Standard - Medicare Case-Mix by Month

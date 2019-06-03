@@ -1,0 +1,5 @@
+OK: Start to run for : MS Enterprise - Physician Profile
+OK: Double Click the First Report Name below: MS Enterprise - Physician Profile
+Element Exists 'DIV  dvCustomSearchPopup: False
+OOps: Exceptional screenshot taken for MS Enterprise - Physician Profile
+OK: Finished one loop for this report: MS Enterprise - Physician Profile

@@ -1,0 +1,5 @@
+OK: Start to run for : IP Standard - DRG Change Condition Detail
+OK: Click to expand report: IP Standard - DRG Change Condition Detail
+OK: Double Click the First Report Name below: IP Standard - DRG Change Condition Detail
+OOps: Exceptional screenshot taken for IP Standard - DRG Change Condition Detail
+OK: Finished one loop for this report: IP Standard - DRG Change Condition Detail

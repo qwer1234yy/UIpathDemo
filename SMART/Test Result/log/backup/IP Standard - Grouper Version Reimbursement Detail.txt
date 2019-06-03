@@ -1,0 +1,11 @@
+OK: Start to run for : IP Standard - Grouper Version Reimbursement Detail
+OK: Click to expand report: IP Standard - Grouper Version Reimbursement Detail
+OK: Double Click the First Report Name below: IP Standard - Grouper Version Reimbursement Detail
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Grouper Version Reimbursement Detail
+OK: Click BUTTON  btnViewReport : IP Standard - Grouper Version Reimbursement Detail
+OK: Click to activate report view window for hotkey: IP Standard - Grouper Version Reimbursement Detail
+OK: Send hotkey: pgdn for  IP Standard - Grouper Version Reimbursement Detail
+OK: Report generated: IP Standard - Grouper Version Reimbursement Detail
+OK: Report generated, screenshot taken:  IP Standard - Grouper Version Reimbursement Detail
+OK: Close window and go on for the next report: IP Standard - Grouper Version Reimbursement Detail
+OK: Finished one loop for this report: IP Standard - Grouper Version Reimbursement Detail

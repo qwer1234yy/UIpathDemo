@@ -1,0 +1,5 @@
+OK: Start to run for : MS Enterprise - Summary of flags on outpatient visits
+OK: Double Click the First Report Name below: MS Enterprise - Summary of flags on outpatient visits
+Element Exists 'DIV  dvCustomSearchPopup: False
+OOps: Exceptional screenshot taken for MS Enterprise - Summary of flags on outpatient visits
+OK: Finished one loop for this report: MS Enterprise - Summary of flags on outpatient visits

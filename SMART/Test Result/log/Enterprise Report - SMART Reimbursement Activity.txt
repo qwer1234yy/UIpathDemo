@@ -1,0 +1,11 @@
+OK: Start to run for : Enterprise Report - SMART Reimbursement Activity
+OK: Double Click the First Report Name below: Enterprise Report - SMART Reimbursement Activity
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: Enterprise Report - SMART Reimbursement Activity
+OK: Click BUTTON  btnViewReport : Enterprise Report - SMART Reimbursement Activity
+OK: Click to activate report view window for hotkey: Enterprise Report - SMART Reimbursement Activity
+OK: Send hotkey: pgdn for  Enterprise Report - SMART Reimbursement Activity
+OK: Report generated: Enterprise Report - SMART Reimbursement Activity
+OK: Report generated, screenshot taken:  Enterprise Report - SMART Reimbursement Activity
+OK: Close window and go on for the next report: Enterprise Report - SMART Reimbursement Activity
+OK: Finished one loop for this report: Enterprise Report - SMART Reimbursement Activity

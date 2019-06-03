@@ -1,0 +1,11 @@
+OK: Start to run for : IP Standard - Detailed Case Listing
+OK: Click to expand report: IP Standard - Detailed Case Listing
+OK: Double Click the First Report Name below: IP Standard - Detailed Case Listing
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Detailed Case Listing
+OK: Click BUTTON  btnViewReport : IP Standard - Detailed Case Listing
+OK: Click to activate report view window for hotkey: IP Standard - Detailed Case Listing
+OK: Send hotkey: pgdn for  IP Standard - Detailed Case Listing
+OK: Report generated: IP Standard - Detailed Case Listing
+OK: Report generated, screenshot taken:  IP Standard - Detailed Case Listing
+OK: Close window and go on for the next report: IP Standard - Detailed Case Listing
+OK: Finished one loop for this report: IP Standard - Detailed Case Listing

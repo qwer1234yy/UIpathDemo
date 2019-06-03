@@ -1,0 +1,11 @@
+OK: Start to run for : Enterprise Report - DRG Contribution to Payer CMI
+OK: Double Click the First Report Name below: Enterprise Report - DRG Contribution to Payer CMI
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: Enterprise Report - DRG Contribution to Payer CMI
+OK: Click BUTTON  btnViewReport : Enterprise Report - DRG Contribution to Payer CMI
+OK: Click to activate report view window for hotkey: Enterprise Report - DRG Contribution to Payer CMI
+OK: Send hotkey: pgdn for  Enterprise Report - DRG Contribution to Payer CMI
+OK: Report generated: Enterprise Report - DRG Contribution to Payer CMI
+OK: Report generated, screenshot taken:  Enterprise Report - DRG Contribution to Payer CMI
+OK: Close window and go on for the next report: Enterprise Report - DRG Contribution to Payer CMI
+OK: Finished one loop for this report: Enterprise Report - DRG Contribution to Payer CMI

@@ -1,0 +1,11 @@
+OK: Start to run for : IP Standard - Present on Admission(POA) Comparison
+OK: Click to expand report: IP Standard - Present on Admission(POA) Comparison
+OK: Double Click the First Report Name below: IP Standard - Present on Admission(POA) Comparison
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Present on Admission(POA) Comparison
+OK: Click BUTTON  btnViewReport : IP Standard - Present on Admission(POA) Comparison
+OK: Click to activate report view window for hotkey: IP Standard - Present on Admission(POA) Comparison
+OK: Send hotkey: pgdn for  IP Standard - Present on Admission(POA) Comparison
+OK: Report generated: IP Standard - Present on Admission(POA) Comparison
+OK: Report generated, screenshot taken:  IP Standard - Present on Admission(POA) Comparison
+OK: Close window and go on for the next report: IP Standard - Present on Admission(POA) Comparison
+OK: Finished one loop for this report: IP Standard - Present on Admission(POA) Comparison

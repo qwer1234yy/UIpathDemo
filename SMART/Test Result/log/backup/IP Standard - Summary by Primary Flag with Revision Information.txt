@@ -1,0 +1,10 @@
+OK: Start to run for : IP Standard - Summary by Primary Flag with Revision Information
+OK: Click to expand report: IP Standard - Summary by Primary Flag with Revision Information
+OK: Double Click the First Report Name below: IP Standard - Summary by Primary Flag with Revision Information
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Summary by Primary Flag with Revision Information
+OK: Click BUTTON  btnViewReport : IP Standard - Summary by Primary Flag with Revision Information
+OK: Click to activate report view window for hotkey: IP Standard - Summary by Primary Flag with Revision Information
+OK: Send hotkey: pgdn for  IP Standard - Summary by Primary Flag with Revision Information
+OK: Report generated: IP Standard - Summary by Primary Flag with Revision Information
+OK: Report generated, screenshot taken:  IP Standard - Summary by Primary Flag with Revision Information
+OK: Close window and go on for the next report: IP Standard - Summary by Primary Flag with Revision Information

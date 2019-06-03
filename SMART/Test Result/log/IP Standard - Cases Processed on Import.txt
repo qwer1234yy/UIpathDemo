@@ -1,0 +1,11 @@
+OK: Start to run for : IP Standard - Cases Processed on Import
+OK: Click to expand report: IP Standard - Cases Processed on Import
+OK: Double Click the First Report Name below: IP Standard - Cases Processed on Import
+OK: Find DIV  dvCustomSearchPopup: IP Standard - Cases Processed on Import
+OK: Click BUTTON  btnViewReport : IP Standard - Cases Processed on Import
+OK: Click to activate report view window for hotkey: IP Standard - Cases Processed on Import
+OK: Send hotkey: pgdn for  IP Standard - Cases Processed on Import
+OK: Report generated: IP Standard - Cases Processed on Import
+OK: Report generated, screenshot taken:  IP Standard - Cases Processed on Import
+OK: Close window and go on for the next report: IP Standard - Cases Processed on Import
+OK: Finished one loop for this report: IP Standard - Cases Processed on Import

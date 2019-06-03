@@ -1,0 +1,11 @@
+OK: Start to run for : MS Enterprise - Flag Rate by Facility by Month
+OK: Double Click the First Report Name below: MS Enterprise - Flag Rate by Facility by Month
+Element Exists 'DIV  dvCustomSearchPopup: True
+OK: Find DIV  dvCustomSearchPopup: MS Enterprise - Flag Rate by Facility by Month
+OK: Click BUTTON  btnViewReport : MS Enterprise - Flag Rate by Facility by Month
+OK: Click to activate report view window for hotkey: MS Enterprise - Flag Rate by Facility by Month
+OK: Send hotkey: pgdn for  MS Enterprise - Flag Rate by Facility by Month
+OK: Report generated: MS Enterprise - Flag Rate by Facility by Month
+OK: Report generated, screenshot taken:  MS Enterprise - Flag Rate by Facility by Month
+OK: Close window and go on for the next report: MS Enterprise - Flag Rate by Facility by Month
+OK: Finished one loop for this report: MS Enterprise - Flag Rate by Facility by Month
